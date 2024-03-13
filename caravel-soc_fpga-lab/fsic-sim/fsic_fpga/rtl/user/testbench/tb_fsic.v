@@ -428,8 +428,8 @@ FSIC #(
 		error_cnt = 0;
 		check_cnt = 0;
 
-        //test008();
-		test009();
+        test008();
+		//test009();
 		//test001();	//soc cfg write/read test
 		//test002();	//test002_fpga_axis_req
 		//test003();	//test003_fpga_to_soc_cfg_read
@@ -2338,7 +2338,7 @@ task test008_up_soc_cfg_length;//4.6.
 			//Test offset 0x00 for user project
 			$display("test008_up_soc_cfg_length: soc cfg read/write test");
 
-			cfg_read_data_expect_value = 32'h64;	
+			cfg_read_data_expect_value = 32'd64;	
 			soc_up_cfg_write('h10, 4'b1111, cfg_read_data_expect_value);
 			soc_up_cfg_read('h10, 4'b1111);
 
