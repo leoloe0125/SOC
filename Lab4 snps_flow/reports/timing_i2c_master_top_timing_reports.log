@@ -1,0 +1,93 @@
+Information: Updating design information... (UID-85)
+ 
+****************************************
+Report : timing
+        -path full
+        -delay max
+        -max_paths 1
+Design : i2c_master_top
+Version: U-2022.12
+Date   : Tue Apr 16 20:11:44 2024
+****************************************
+
+Operating Conditions: tt0p8v25c   Library: saed14rvt_tt0p8v25c
+Wire Load Model Mode: top
+
+  Startpoint: byte_controller/bit_controller/cnt_reg[0]
+              (rising edge-triggered flip-flop clocked by wb_clk_i)
+  Endpoint: byte_controller/bit_controller/cnt_reg[15]
+            (rising edge-triggered flip-flop clocked by wb_clk_i)
+  Path Group: wb_clk_i
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  i2c_master_top     8000                  saed14rvt_tt0p8v25c
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock wb_clk_i (rise edge)                              0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  byte_controller/bit_controller/cnt_reg[0]/CK (SAEDRVT14_FDPRBQ_V2_1)
+                                                          0.00       0.00 r
+  byte_controller/bit_controller/cnt_reg[0]/Q (SAEDRVT14_FDPRBQ_V2_1)
+                                                          0.05       0.05 f
+  byte_controller/bit_controller/sub_228/A[0] (i2c_master_bit_ctrl_DW01_dec_1_DW01_dec_2)
+                                                          0.00       0.05 f
+  byte_controller/bit_controller/sub_228/U2/X (SAEDRVT14_OR2_1)
+                                                          0.02       0.07 f
+  byte_controller/bit_controller/sub_228/U31/X (SAEDRVT14_OR2_0P5)
+                                                          0.02       0.09 f
+  byte_controller/bit_controller/sub_228/U30/X (SAEDRVT14_OR2_0P5)
+                                                          0.02       0.11 f
+  byte_controller/bit_controller/sub_228/U29/X (SAEDRVT14_OR2_0P5)
+                                                          0.02       0.13 f
+  byte_controller/bit_controller/sub_228/U28/X (SAEDRVT14_OR2_0P5)
+                                                          0.02       0.15 f
+  byte_controller/bit_controller/sub_228/U27/X (SAEDRVT14_OR2_0P5)
+                                                          0.02       0.16 f
+  byte_controller/bit_controller/sub_228/U26/X (SAEDRVT14_OR2_0P5)
+                                                          0.02       0.18 f
+  byte_controller/bit_controller/sub_228/U25/X (SAEDRVT14_OR2_0P5)
+                                                          0.02       0.20 f
+  byte_controller/bit_controller/sub_228/U24/X (SAEDRVT14_NR2_1)
+                                                          0.02       0.22 r
+  byte_controller/bit_controller/sub_228/U23/X (SAEDRVT14_ND2_CDC_0P5)
+                                                          0.02       0.24 f
+  byte_controller/bit_controller/sub_228/U21/X (SAEDRVT14_OR2_0P5)
+                                                          0.02       0.25 f
+  byte_controller/bit_controller/sub_228/U19/X (SAEDRVT14_OR2_0P5)
+                                                          0.02       0.27 f
+  byte_controller/bit_controller/sub_228/U17/X (SAEDRVT14_NR2_1)
+                                                          0.02       0.29 r
+  byte_controller/bit_controller/sub_228/U1/X (SAEDRVT14_INV_1)
+                                                          0.02       0.31 f
+  byte_controller/bit_controller/sub_228/U14/X (SAEDRVT14_NR2_1)
+                                                          0.01       0.32 r
+  byte_controller/bit_controller/sub_228/U13/X (SAEDRVT14_EO2_V1_0P75)
+                                                          0.03       0.35 r
+  byte_controller/bit_controller/sub_228/SUM[15] (i2c_master_bit_ctrl_DW01_dec_1_DW01_dec_2)
+                                                          0.00       0.35 r
+  byte_controller/bit_controller/U44/X (SAEDRVT14_OA2BB2_V1_1)
+                                                          0.02       0.37 f
+  byte_controller/bit_controller/U42/X (SAEDRVT14_OAI21_0P75)
+                                                          0.01       0.38 r
+  byte_controller/bit_controller/cnt_reg[15]/D (SAEDRVT14_FDPRBQ_V2_1)
+                                                          0.01       0.38 r
+  data arrival time                                                  0.38
+
+  clock wb_clk_i (rise edge)                              2.00       2.00
+  clock network delay (ideal)                             0.00       2.00
+  clock uncertainty                                      -0.30       1.70
+  byte_controller/bit_controller/cnt_reg[15]/CK (SAEDRVT14_FDPRBQ_V2_1)
+                                                          0.00       1.70 r
+  library setup time                                     -0.01       1.69
+  data required time                                                 1.69
+  --------------------------------------------------------------------------
+  data required time                                                 1.69
+  data arrival time                                                 -0.38
+  --------------------------------------------------------------------------
+  slack (MET)                                                        1.31
+
+
+1
