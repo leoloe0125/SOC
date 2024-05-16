@@ -7,7 +7,7 @@
       "name": "design_1",
       "rev_ctrl_bd_flag": "RevCtrlBdOff",
       "synth_flow_mode": "Hierarchical",
-      "tool_version": "2022.1",
+      "tool_version": "2023.2",
       "validated": "true"
     },
     "design_tree": {
@@ -78,6 +78,7 @@
     "components": {
       "axi_smc": {
         "vlnv": "xilinx.com:ip:smartconnect:1.0",
+        "ip_revision": "21",
         "xci_name": "design_1_axi_smc_0",
         "xci_path": "ip/design_1_axi_smc_0/design_1_axi_smc_0.xci",
         "inst_hier_path": "axi_smc",
@@ -138,6 +139,7 @@
       },
       "axi_smc_1": {
         "vlnv": "xilinx.com:ip:smartconnect:1.0",
+        "ip_revision": "21",
         "xci_name": "design_1_axi_smc_1_0",
         "xci_path": "ip/design_1_axi_smc_1_0/design_1_axi_smc_1_0.xci",
         "inst_hier_path": "axi_smc_1",
@@ -198,6 +200,7 @@
       },
       "axi_smc_2": {
         "vlnv": "xilinx.com:ip:smartconnect:1.0",
+        "ip_revision": "21",
         "xci_name": "design_1_axi_smc_2_0",
         "xci_path": "ip/design_1_axi_smc_2_0/design_1_axi_smc_2_0.xci",
         "inst_hier_path": "axi_smc_2",
@@ -258,6 +261,7 @@
       },
       "axi_vip_0": {
         "vlnv": "xilinx.com:ip:axi_vip:1.1",
+        "ip_revision": "15",
         "xci_name": "design_1_axi_vip_0_0",
         "xci_path": "ip/design_1_axi_vip_0_0/design_1_axi_vip_0_0.xci",
         "inst_hier_path": "axi_vip_0",
@@ -425,6 +429,7 @@
         "components": {
           "xbar": {
             "vlnv": "xilinx.com:ip:axi_crossbar:2.1",
+            "ip_revision": "30",
             "xci_name": "design_1_xbar_0",
             "xci_path": "ip/design_1_xbar_0/design_1_xbar_0.xci",
             "inst_hier_path": "axi_vip_0_axi_periph/xbar",
@@ -685,20 +690,20 @@
           },
           "m00_couplers_to_axi_vip_0_axi_periph": {
             "interface_ports": [
-              "M00_AXI",
-              "m00_couplers/M_AXI"
+              "m00_couplers/M_AXI",
+              "M00_AXI"
             ]
           },
           "m01_couplers_to_axi_vip_0_axi_periph": {
             "interface_ports": [
-              "M01_AXI",
-              "m01_couplers/M_AXI"
+              "m01_couplers/M_AXI",
+              "M01_AXI"
             ]
           },
           "m02_couplers_to_axi_vip_0_axi_periph": {
             "interface_ports": [
-              "M02_AXI",
-              "m02_couplers/M_AXI"
+              "m02_couplers/M_AXI",
+              "M02_AXI"
             ]
           },
           "s00_couplers_to_xbar": {
@@ -759,6 +764,7 @@
       },
       "axi_vip_1": {
         "vlnv": "xilinx.com:ip:axi_vip:1.1",
+        "ip_revision": "15",
         "xci_name": "design_1_axi_vip_1_0",
         "xci_path": "ip/design_1_axi_vip_1_0/design_1_axi_vip_1_0.xci",
         "inst_hier_path": "axi_vip_1",
@@ -770,6 +776,7 @@
       },
       "axi_vip_2": {
         "vlnv": "xilinx.com:ip:axi_vip:1.1",
+        "ip_revision": "15",
         "xci_name": "design_1_axi_vip_2_0",
         "xci_path": "ip/design_1_axi_vip_2_0/design_1_axi_vip_2_0.xci",
         "inst_hier_path": "axi_vip_2",
@@ -781,6 +788,7 @@
       },
       "axi_vip_3": {
         "vlnv": "xilinx.com:ip:axi_vip:1.1",
+        "ip_revision": "15",
         "xci_name": "design_1_axi_vip_3_0",
         "xci_path": "ip/design_1_axi_vip_3_0/design_1_axi_vip_3_0.xci",
         "inst_hier_path": "axi_vip_3",
@@ -792,6 +800,7 @@
       },
       "blk_mem_gen_0": {
         "vlnv": "xilinx.com:ip:blk_mem_gen:8.4",
+        "ip_revision": "7",
         "xci_name": "design_1_blk_mem_gen_0_0",
         "xci_path": "ip/design_1_blk_mem_gen_0_0/design_1_blk_mem_gen_0_0.xci",
         "inst_hier_path": "blk_mem_gen_0",
@@ -848,6 +857,7 @@
       },
       "caravel_0": {
         "vlnv": "xilinx.com:module_ref:caravel:1.0",
+        "ip_revision": "1",
         "xci_name": "design_1_caravel_0_0",
         "xci_path": "ip/design_1_caravel_0_0/design_1_caravel_0_0.xci",
         "inst_hier_path": "caravel_0",
@@ -913,6 +923,7 @@
       },
       "clk_wiz_0": {
         "vlnv": "xilinx.com:ip:clk_wiz:6.0",
+        "ip_revision": "13",
         "xci_name": "design_1_clk_wiz_0_0",
         "xci_path": "ip/design_1_clk_wiz_0_0/design_1_clk_wiz_0_0.xci",
         "inst_hier_path": "clk_wiz_0",
@@ -978,6 +989,7 @@
       },
       "ps_axil_0": {
         "vlnv": "xilinx.com:module_ref:ps_axil:1.0",
+        "ip_revision": "1",
         "xci_name": "design_1_ps_axil_0_0",
         "xci_path": "ip/design_1_ps_axil_0_0/design_1_ps_axil_0_0.xci",
         "inst_hier_path": "ps_axil_0",
@@ -1274,7 +1286,7 @@
                 "value_src": "ip_prop"
               },
               "master_id": {
-                "value": "1"
+                "value": "3"
               }
             },
             "address_space_ref": "ladma_mm",
@@ -2167,12 +2179,14 @@
       },
       "rst_clk_wiz_0_5M": {
         "vlnv": "xilinx.com:ip:proc_sys_reset:5.0",
+        "ip_revision": "14",
         "xci_name": "design_1_rst_clk_wiz_0_5M_0",
         "xci_path": "ip/design_1_rst_clk_wiz_0_5M_0/design_1_rst_clk_wiz_0_5M_0.xci",
         "inst_hier_path": "rst_clk_wiz_0_5M"
       },
       "spiflash_0": {
         "vlnv": "xilinx.com:module_ref:spiflash:1.0",
+        "ip_revision": "1",
         "xci_name": "design_1_spiflash_0_0",
         "xci_path": "ip/design_1_spiflash_0_0/design_1_spiflash_0_0.xci",
         "inst_hier_path": "spiflash_0",
@@ -2275,6 +2289,7 @@
       },
       "userdma_0": {
         "vlnv": "xilinx.com:hls:userdma:1.0",
+        "ip_revision": "2113553643",
         "xci_name": "design_1_userdma_0_0",
         "xci_path": "ip/design_1_userdma_0_0/design_1_userdma_0_0.xci",
         "inst_hier_path": "userdma_0",
@@ -2290,7 +2305,7 @@
             },
             "parameters": {
               "master_id": {
-                "value": "2"
+                "value": "1"
               }
             }
           },
@@ -2305,7 +2320,7 @@
             },
             "parameters": {
               "master_id": {
-                "value": "3"
+                "value": "2"
               }
             }
           }

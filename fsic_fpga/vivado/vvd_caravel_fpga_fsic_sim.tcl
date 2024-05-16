@@ -29,9 +29,7 @@ proc checkRequiredFiles { origin_dir} {
  "[file normalize "$origin_dir/vvd_srcs/caravel_soc/rtl/user/user_subsys/axis_mstr/rtl/axis_mstr.v"]"\
  "[file normalize "$origin_dir/vvd_srcs/caravel_soc/rtl/user/user_subsys/axis_slav/rtl/axis_slav.v"]"\
  "[file normalize "$origin_dir/vvd_srcs/caravel_soc/rtl/soc/chip_io.v"]"\
- "[file normalize "$origin_dir/vvd_srcs/caravel_soc/rtl/user/user_subsys/user_prj/user_prj0/rtl/fir.v"]"\
- "[file normalize "$origin_dir/vvd_srcs/caravel_soc/rtl/user/user_subsys/user_prj/user_prj0/rtl/multiplier_adder.v"]"\
- "[file normalize "$origin_dir/vvd_srcs/caravel_soc/rtl/user/user_subsys/user_prj/user_prj0/rtl/bram11.v"]"\
+ "[file normalize "$origin_dir/vvd_srcs/caravel_soc/rtl/user/user_subsys/user_prj/user_prj0/rtl/concat_EdgeDetect_Top_fsic.v"]"\
  "[file normalize "$origin_dir/vvd_srcs/caravel_soc/rtl/user/config_ctrl/rtl/config_ctrl.v"]"\
  "[file normalize "$origin_dir/vvd_srcs/caravel_soc/rtl/user/rtl/fsic.v"]"\
  "[file normalize "$origin_dir/vvd_srcs/caravel_soc/rtl/user/fsic_clkrst/rtl/fsic_clkrst.v"]"\
@@ -48,9 +46,13 @@ proc checkRequiredFiles { origin_dir} {
  "[file normalize "$origin_dir/vvd_srcs/caravel_soc/rtl/soc/mgmt_core.v"]"\
  "[file normalize "$origin_dir/vvd_srcs/caravel_soc/rtl/soc/mgmt_core_wrapper.v"]"\
  "[file normalize "$origin_dir/vvd_srcs/caravel_soc/rtl/soc/mprj_io.v"]"\
+ "[file normalize "$origin_dir/vvd_srcs/caravel_soc/rtl/user/user_subsys/user_prj/user_prj0/rtl/spram.v"]"\
  "[file normalize "$origin_dir/vvd_srcs/caravel_soc/rtl/user/axis_switch/rtl/sw_caravel.v"]"\
  "[file normalize "$origin_dir/vvd_srcs/caravel_soc/rtl/user/user_subsys/user_prj/user_prj0/rtl/user_prj0.v"]"\
  "[file normalize "$origin_dir/vvd_srcs/caravel_soc/rtl/user/user_subsys/user_prj/user_prj1/rtl/user_prj1.v"]"\
+ "[file normalize "$origin_dir/vvd_srcs/caravel_soc/rtl/user/user_subsys/user_prj/user_prj1/rtl/bram11.v"]"\
+ "[file normalize "$origin_dir/vvd_srcs/caravel_soc/rtl/user/user_subsys/user_prj/user_prj1/rtl/fir.v"]"\
+ "[file normalize "$origin_dir/vvd_srcs/caravel_soc/rtl/user/user_subsys/user_prj/user_prj1/rtl/multiplier_adder.v"]"\
  "[file normalize "$origin_dir/vvd_srcs/caravel_soc/rtl/user/user_subsys/user_prj/user_prj2/rtl/user_prj2.v"]"\
  "[file normalize "$origin_dir/vvd_srcs/caravel_soc/rtl/user/user_subsys/user_prj/user_prj3/rtl/user_prj3.v"]"\
  "[file normalize "$origin_dir/vvd_srcs/caravel_soc/rtl/user/rtl/user_project_wrapper.v"]"\
@@ -245,9 +247,7 @@ set files [list \
  [file normalize "${origin_dir}/vvd_srcs/caravel_soc/rtl/user/user_subsys/axis_mstr/rtl/axis_mstr.v"] \
  [file normalize "${origin_dir}/vvd_srcs/caravel_soc/rtl/user/user_subsys/axis_slav/rtl/axis_slav.v"] \
  [file normalize "${origin_dir}/vvd_srcs/caravel_soc/rtl/soc/chip_io.v"] \
-[file normalize "$origin_dir/vvd_srcs/caravel_soc/rtl/user/user_subsys/user_prj/user_prj0/rtl/fir.v"]\
- [file normalize "$origin_dir/vvd_srcs/caravel_soc/rtl/user/user_subsys/user_prj/user_prj0/rtl/multiplier_adder.v"]\
- [file normalize "$origin_dir/vvd_srcs/caravel_soc/rtl/user/user_subsys/user_prj/user_prj0/rtl/bram11.v"]\
+ [file normalize "${origin_dir}/vvd_srcs/caravel_soc/rtl/user/user_subsys/user_prj/user_prj0/rtl/concat_EdgeDetect_Top_fsic.v"] \
  [file normalize "${origin_dir}/vvd_srcs/caravel_soc/rtl/user/config_ctrl/rtl/config_ctrl.v"] \
  [file normalize "${origin_dir}/vvd_srcs/caravel_soc/rtl/user/rtl/fsic.v"] \
  [file normalize "${origin_dir}/vvd_srcs/caravel_soc/rtl/user/fsic_clkrst/rtl/fsic_clkrst.v"] \
@@ -264,9 +264,13 @@ set files [list \
  [file normalize "${origin_dir}/vvd_srcs/caravel_soc/rtl/soc/mgmt_core.v"] \
  [file normalize "${origin_dir}/vvd_srcs/caravel_soc/rtl/soc/mgmt_core_wrapper.v"] \
  [file normalize "${origin_dir}/vvd_srcs/caravel_soc/rtl/soc/mprj_io.v"] \
+ [file normalize "${origin_dir}/vvd_srcs/caravel_soc/rtl/user/user_subsys/user_prj/user_prj0/rtl/spram.v"] \
  [file normalize "${origin_dir}/vvd_srcs/caravel_soc/rtl/user/axis_switch/rtl/sw_caravel.v"] \
  [file normalize "${origin_dir}/vvd_srcs/caravel_soc/rtl/user/user_subsys/user_prj/user_prj0/rtl/user_prj0.v"] \
  [file normalize "${origin_dir}/vvd_srcs/caravel_soc/rtl/user/user_subsys/user_prj/user_prj1/rtl/user_prj1.v"] \
+ [file normalize "${origin_dir}/vvd_srcs/caravel_soc/rtl/user/user_subsys/user_prj/user_prj1/rtl/bram11.v"] \
+ [file normalize "${origin_dir}/vvd_srcs/caravel_soc/rtl/user/user_subsys/user_prj/user_prj1/rtl/fir.v"] \
+ [file normalize "${origin_dir}/vvd_srcs/caravel_soc/rtl/user/user_subsys/user_prj/user_prj1/rtl/multiplier_adder.v"] \
  [file normalize "${origin_dir}/vvd_srcs/caravel_soc/rtl/user/user_subsys/user_prj/user_prj2/rtl/user_prj2.v"] \
  [file normalize "${origin_dir}/vvd_srcs/caravel_soc/rtl/user/user_subsys/user_prj/user_prj3/rtl/user_prj3.v"] \
  [file normalize "${origin_dir}/vvd_srcs/caravel_soc/rtl/user/rtl/user_project_wrapper.v"] \
@@ -607,7 +611,7 @@ proc cr_bd_design_1 { parentCell } {
   set blk_mem_gen_0 [ create_bd_cell -type ip -vlnv xilinx.com:ip:blk_mem_gen:8.4 blk_mem_gen_0 ]
   set_property -dict [ list \
    CONFIG.Byte_Size {8} \
-CONFIG.Coe_File {/home/ubuntu/Desktop/caravel-soc_fpga-lab/fsic_fpga/fsic_fpga/vivado/fsic.coe} \
+CONFIG.Coe_File {/home/user/Documents/Code/ASoC/new_fsic/fsic_fpga/vivado/fsic.coe} \
    CONFIG.EN_SAFETY_CKT {true} \
    CONFIG.Enable_32bit_Address {true} \
    CONFIG.Enable_A {Use_ENA_Pin} \
@@ -1071,6 +1075,7 @@ move_dashboard_gadget -name {methodology_1} -row 2 -col 1
 
 # ----- Launch Simulation -----# 
 set_property target_simulator "XSim" [current_project]  
+set_property -name {xsim.simulate.log_all_signals} -value {true} -objects [get_filesets sim_1]
 launch_simulation -mode behavioral
 run all
 
