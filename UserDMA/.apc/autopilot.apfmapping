@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<autopilotfilemapping:AutoPilotFileMapping xmlns:autopilotfilemapping="www.autoesl.com/autopilotfilemapping">
+  <source>
+    <originFiles name="userdma.cpp" path="C:\Users\leolo\Project\SOC\UserDMA\userdma.cpp"/>
+    <originFiles name="userdma.h" path="C:\Users\leolo\Project\SOC\UserDMA\userdma.h"/>
+  </source>
+  <testbench>
+    <originFiles name="userdma_test.cpp" path="C:\Users\leolo\Project\SOC\UserDMA\userdma_test.cpp"/>
+  </testbench>
+</autopilotfilemapping:AutoPilotFileMapping>
