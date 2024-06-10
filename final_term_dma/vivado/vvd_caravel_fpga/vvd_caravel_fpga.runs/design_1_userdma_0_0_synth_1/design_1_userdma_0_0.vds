@@ -1,0 +1,778 @@
+#-----------------------------------------------------------
+# Vivado v2023.2 (64-bit)
+# SW Build 4029153 on Fri Oct 13 20:13:54 MDT 2023
+# IP Build 4028589 on Sat Oct 14 00:45:43 MDT 2023
+# SharedData Build 4025554 on Tue Oct 10 17:18:54 MDT 2023
+# Start of session at: Thu May 16 19:31:20 2024
+# Process ID: 377602
+# Current directory: /home/user/Documents/Code/ASoC/new_fsic/fsic_fpga/vivado/vvd_caravel_fpga/vvd_caravel_fpga.runs/design_1_userdma_0_0_synth_1
+# Command line: vivado -log design_1_userdma_0_0.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source design_1_userdma_0_0.tcl
+# Log file: /home/user/Documents/Code/ASoC/new_fsic/fsic_fpga/vivado/vvd_caravel_fpga/vvd_caravel_fpga.runs/design_1_userdma_0_0_synth_1/design_1_userdma_0_0.vds
+# Journal file: /home/user/Documents/Code/ASoC/new_fsic/fsic_fpga/vivado/vvd_caravel_fpga/vvd_caravel_fpga.runs/design_1_userdma_0_0_synth_1/vivado.jou
+# Running On: lumusen, OS: Linux, CPU Frequency: 4049.360 MHz, CPU Physical cores: 12, Host memory: 33559 MB
+#-----------------------------------------------------------
+source design_1_userdma_0_0.tcl -notrace
+create_project: Time (s): cpu = 00:00:06 ; elapsed = 00:00:06 . Memory (MB): peak = 1357.164 ; gain = 38.836 ; free physical = 5447 ; free virtual = 19766
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1700] Loaded user IP repository '/home/user/Documents/Code/ASoC/new_fsic/fsic_fpga/vivado/vitis_prj/hls_caravel_ps'.
+INFO: [IP_Flow 19-1700] Loaded user IP repository '/home/user/Documents/Code/ASoC/new_fsic/fsic_fpga/vivado/vitis_prj/hls_userdma/hls_userdma.prj/solution1/impl/ip'.
+INFO: [IP_Flow 19-1700] Loaded user IP repository '/home/user/Documents/Code/ASoC/new_fsic/fsic_fpga/vivado/vitis_prj/hls_output_pin'.
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository '/home/Xilinx/Vivado/2023.2/data/ip'.
+INFO: [IP_Flow 19-6924] IPCACHE: Running cache check for IP inst: design_1_userdma_0_0
+Command: synth_design -top design_1_userdma_0_0 -part xc7z020clg400-1 -incremental_mode off -mode out_of_context
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7z020'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7z020'
+INFO: [Device 21-403] Loading part xc7z020clg400-1
+INFO: [Synth 8-7079] Multithreading enabled for synth_design using a maximum of 4 processes.
+INFO: [Synth 8-7078] Launching helper process for spawning children vivado processes
+INFO: [Synth 8-7075] Helper process launched with PID 377886
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:05 ; elapsed = 00:00:05 . Memory (MB): peak = 2128.223 ; gain = 402.715 ; free physical = 382 ; free virtual = 13406
+---------------------------------------------------------------------------------
+INFO: [Synth 8-6157] synthesizing module 'design_1_userdma_0_0' [/home/user/Documents/Code/ASoC/new_fsic/fsic_fpga/vivado/vvd_caravel_fpga/vvd_caravel_fpga.gen/sources_1/bd/design_1/ip/design_1_userdma_0_0/synth/design_1_userdma_0_0.v:53]
+INFO: [Synth 8-6157] synthesizing module 'userdma' [/home/user/Documents/Code/ASoC/new_fsic/fsic_fpga/vivado/vvd_caravel_fpga/vvd_caravel_fpga.gen/sources_1/bd/design_1/ipshared/17de/hdl/verilog/userdma.v:10]
+INFO: [Synth 8-6157] synthesizing module 'userdma_control_s_axi' [/home/user/Documents/Code/ASoC/new_fsic/fsic_fpga/vivado/vvd_caravel_fpga/vvd_caravel_fpga.gen/sources_1/bd/design_1/ipshared/17de/hdl/verilog/userdma_control_s_axi.v:7]
+INFO: [Synth 8-155] case statement is not full and has no default [/home/user/Documents/Code/ASoC/new_fsic/fsic_fpga/vivado/vvd_caravel_fpga/vvd_caravel_fpga.gen/sources_1/bd/design_1/ipshared/17de/hdl/verilog/userdma_control_s_axi.v:302]
+INFO: [Synth 8-6155] done synthesizing module 'userdma_control_s_axi' (0#1) [/home/user/Documents/Code/ASoC/new_fsic/fsic_fpga/vivado/vvd_caravel_fpga/vvd_caravel_fpga.gen/sources_1/bd/design_1/ipshared/17de/hdl/verilog/userdma_control_s_axi.v:7]
+INFO: [Synth 8-6157] synthesizing module 'userdma_gmem0_m_axi' [/home/user/Documents/Code/ASoC/new_fsic/fsic_fpga/vivado/vvd_caravel_fpga/vvd_caravel_fpga.gen/sources_1/bd/design_1/ipshared/17de/hdl/verilog/userdma_gmem0_m_axi.v:11]
+INFO: [Synth 8-6157] synthesizing module 'userdma_gmem0_m_axi_store' [/home/user/Documents/Code/ASoC/new_fsic/fsic_fpga/vivado/vvd_caravel_fpga/vvd_caravel_fpga.gen/sources_1/bd/design_1/ipshared/17de/hdl/verilog/userdma_gmem0_m_axi.v:780]
+INFO: [Synth 8-6157] synthesizing module 'userdma_gmem0_m_axi_fifo' [/home/user/Documents/Code/ASoC/new_fsic/fsic_fpga/vivado/vvd_caravel_fpga/vvd_caravel_fpga.gen/sources_1/bd/design_1/ipshared/17de/hdl/verilog/userdma_gmem0_m_axi.v:2686]
+INFO: [Synth 8-6157] synthesizing module 'userdma_gmem0_m_axi_srl' [/home/user/Documents/Code/ASoC/new_fsic/fsic_fpga/vivado/vvd_caravel_fpga/vvd_caravel_fpga.gen/sources_1/bd/design_1/ipshared/17de/hdl/verilog/userdma_gmem0_m_axi.v:2864]
+INFO: [Synth 8-6155] done synthesizing module 'userdma_gmem0_m_axi_srl' (0#1) [/home/user/Documents/Code/ASoC/new_fsic/fsic_fpga/vivado/vvd_caravel_fpga/vvd_caravel_fpga.gen/sources_1/bd/design_1/ipshared/17de/hdl/verilog/userdma_gmem0_m_axi.v:2864]
+INFO: [Synth 8-6155] done synthesizing module 'userdma_gmem0_m_axi_fifo' (0#1) [/home/user/Documents/Code/ASoC/new_fsic/fsic_fpga/vivado/vvd_caravel_fpga/vvd_caravel_fpga.gen/sources_1/bd/design_1/ipshared/17de/hdl/verilog/userdma_gmem0_m_axi.v:2686]
+INFO: [Synth 8-6157] synthesizing module 'userdma_gmem0_m_axi_fifo__parameterized0' [/home/user/Documents/Code/ASoC/new_fsic/fsic_fpga/vivado/vvd_caravel_fpga/vvd_caravel_fpga.gen/sources_1/bd/design_1/ipshared/17de/hdl/verilog/userdma_gmem0_m_axi.v:2686]
+INFO: [Synth 8-6157] synthesizing module 'userdma_gmem0_m_axi_mem' [/home/user/Documents/Code/ASoC/new_fsic/fsic_fpga/vivado/vvd_caravel_fpga/vvd_caravel_fpga.gen/sources_1/bd/design_1/ipshared/17de/hdl/verilog/userdma_gmem0_m_axi.v:2918]
+INFO: [Synth 8-6155] done synthesizing module 'userdma_gmem0_m_axi_mem' (0#1) [/home/user/Documents/Code/ASoC/new_fsic/fsic_fpga/vivado/vvd_caravel_fpga/vvd_caravel_fpga.gen/sources_1/bd/design_1/ipshared/17de/hdl/verilog/userdma_gmem0_m_axi.v:2918]
+INFO: [Synth 8-6155] done synthesizing module 'userdma_gmem0_m_axi_fifo__parameterized0' (0#1) [/home/user/Documents/Code/ASoC/new_fsic/fsic_fpga/vivado/vvd_caravel_fpga/vvd_caravel_fpga.gen/sources_1/bd/design_1/ipshared/17de/hdl/verilog/userdma_gmem0_m_axi.v:2686]
+INFO: [Synth 8-6157] synthesizing module 'userdma_gmem0_m_axi_fifo__parameterized1' [/home/user/Documents/Code/ASoC/new_fsic/fsic_fpga/vivado/vvd_caravel_fpga/vvd_caravel_fpga.gen/sources_1/bd/design_1/ipshared/17de/hdl/verilog/userdma_gmem0_m_axi.v:2686]
+INFO: [Synth 8-6157] synthesizing module 'userdma_gmem0_m_axi_srl__parameterized0' [/home/user/Documents/Code/ASoC/new_fsic/fsic_fpga/vivado/vvd_caravel_fpga/vvd_caravel_fpga.gen/sources_1/bd/design_1/ipshared/17de/hdl/verilog/userdma_gmem0_m_axi.v:2864]
+INFO: [Synth 8-6155] done synthesizing module 'userdma_gmem0_m_axi_srl__parameterized0' (0#1) [/home/user/Documents/Code/ASoC/new_fsic/fsic_fpga/vivado/vvd_caravel_fpga/vvd_caravel_fpga.gen/sources_1/bd/design_1/ipshared/17de/hdl/verilog/userdma_gmem0_m_axi.v:2864]
+INFO: [Synth 8-6155] done synthesizing module 'userdma_gmem0_m_axi_fifo__parameterized1' (0#1) [/home/user/Documents/Code/ASoC/new_fsic/fsic_fpga/vivado/vvd_caravel_fpga/vvd_caravel_fpga.gen/sources_1/bd/design_1/ipshared/17de/hdl/verilog/userdma_gmem0_m_axi.v:2686]
+INFO: [Synth 8-6157] synthesizing module 'userdma_gmem0_m_axi_fifo__parameterized2' [/home/user/Documents/Code/ASoC/new_fsic/fsic_fpga/vivado/vvd_caravel_fpga/vvd_caravel_fpga.gen/sources_1/bd/design_1/ipshared/17de/hdl/verilog/userdma_gmem0_m_axi.v:2686]
+INFO: [Synth 8-6157] synthesizing module 'userdma_gmem0_m_axi_srl__parameterized1' [/home/user/Documents/Code/ASoC/new_fsic/fsic_fpga/vivado/vvd_caravel_fpga/vvd_caravel_fpga.gen/sources_1/bd/design_1/ipshared/17de/hdl/verilog/userdma_gmem0_m_axi.v:2864]
+INFO: [Synth 8-6155] done synthesizing module 'userdma_gmem0_m_axi_srl__parameterized1' (0#1) [/home/user/Documents/Code/ASoC/new_fsic/fsic_fpga/vivado/vvd_caravel_fpga/vvd_caravel_fpga.gen/sources_1/bd/design_1/ipshared/17de/hdl/verilog/userdma_gmem0_m_axi.v:2864]
+INFO: [Synth 8-6155] done synthesizing module 'userdma_gmem0_m_axi_fifo__parameterized2' (0#1) [/home/user/Documents/Code/ASoC/new_fsic/fsic_fpga/vivado/vvd_caravel_fpga/vvd_caravel_fpga.gen/sources_1/bd/design_1/ipshared/17de/hdl/verilog/userdma_gmem0_m_axi.v:2686]
+INFO: [Synth 8-6155] done synthesizing module 'userdma_gmem0_m_axi_store' (0#1) [/home/user/Documents/Code/ASoC/new_fsic/fsic_fpga/vivado/vvd_caravel_fpga/vvd_caravel_fpga.gen/sources_1/bd/design_1/ipshared/17de/hdl/verilog/userdma_gmem0_m_axi.v:780]
+INFO: [Synth 8-6157] synthesizing module 'userdma_gmem0_m_axi_load' [/home/user/Documents/Code/ASoC/new_fsic/fsic_fpga/vivado/vvd_caravel_fpga/vvd_caravel_fpga.gen/sources_1/bd/design_1/ipshared/17de/hdl/verilog/userdma_gmem0_m_axi.v:324]
+INFO: [Synth 8-6157] synthesizing module 'userdma_gmem0_m_axi_fifo__parameterized3' [/home/user/Documents/Code/ASoC/new_fsic/fsic_fpga/vivado/vvd_caravel_fpga/vvd_caravel_fpga.gen/sources_1/bd/design_1/ipshared/17de/hdl/verilog/userdma_gmem0_m_axi.v:2686]
+INFO: [Synth 8-6157] synthesizing module 'userdma_gmem0_m_axi_mem__parameterized0' [/home/user/Documents/Code/ASoC/new_fsic/fsic_fpga/vivado/vvd_caravel_fpga/vvd_caravel_fpga.gen/sources_1/bd/design_1/ipshared/17de/hdl/verilog/userdma_gmem0_m_axi.v:2918]
+INFO: [Synth 8-6155] done synthesizing module 'userdma_gmem0_m_axi_mem__parameterized0' (0#1) [/home/user/Documents/Code/ASoC/new_fsic/fsic_fpga/vivado/vvd_caravel_fpga/vvd_caravel_fpga.gen/sources_1/bd/design_1/ipshared/17de/hdl/verilog/userdma_gmem0_m_axi.v:2918]
+INFO: [Synth 8-6155] done synthesizing module 'userdma_gmem0_m_axi_fifo__parameterized3' (0#1) [/home/user/Documents/Code/ASoC/new_fsic/fsic_fpga/vivado/vvd_caravel_fpga/vvd_caravel_fpga.gen/sources_1/bd/design_1/ipshared/17de/hdl/verilog/userdma_gmem0_m_axi.v:2686]
+INFO: [Synth 8-6155] done synthesizing module 'userdma_gmem0_m_axi_load' (0#1) [/home/user/Documents/Code/ASoC/new_fsic/fsic_fpga/vivado/vvd_caravel_fpga/vvd_caravel_fpga.gen/sources_1/bd/design_1/ipshared/17de/hdl/verilog/userdma_gmem0_m_axi.v:324]
+INFO: [Synth 8-6157] synthesizing module 'userdma_gmem0_m_axi_write' [/home/user/Documents/Code/ASoC/new_fsic/fsic_fpga/vivado/vvd_caravel_fpga/vvd_caravel_fpga.gen/sources_1/bd/design_1/ipshared/17de/hdl/verilog/userdma_gmem0_m_axi.v:1852]
+INFO: [Synth 8-6157] synthesizing module 'userdma_gmem0_m_axi_reg_slice' [/home/user/Documents/Code/ASoC/new_fsic/fsic_fpga/vivado/vvd_caravel_fpga/vvd_caravel_fpga.gen/sources_1/bd/design_1/ipshared/17de/hdl/verilog/userdma_gmem0_m_axi.v:2584]
+INFO: [Synth 8-6155] done synthesizing module 'userdma_gmem0_m_axi_reg_slice' (0#1) [/home/user/Documents/Code/ASoC/new_fsic/fsic_fpga/vivado/vvd_caravel_fpga/vvd_caravel_fpga.gen/sources_1/bd/design_1/ipshared/17de/hdl/verilog/userdma_gmem0_m_axi.v:2584]
+INFO: [Synth 8-6157] synthesizing module 'userdma_gmem0_m_axi_fifo__parameterized4' [/home/user/Documents/Code/ASoC/new_fsic/fsic_fpga/vivado/vvd_caravel_fpga/vvd_caravel_fpga.gen/sources_1/bd/design_1/ipshared/17de/hdl/verilog/userdma_gmem0_m_axi.v:2686]
+INFO: [Synth 8-6157] synthesizing module 'userdma_gmem0_m_axi_srl__parameterized2' [/home/user/Documents/Code/ASoC/new_fsic/fsic_fpga/vivado/vvd_caravel_fpga/vvd_caravel_fpga.gen/sources_1/bd/design_1/ipshared/17de/hdl/verilog/userdma_gmem0_m_axi.v:2864]
+INFO: [Synth 8-6155] done synthesizing module 'userdma_gmem0_m_axi_srl__parameterized2' (0#1) [/home/user/Documents/Code/ASoC/new_fsic/fsic_fpga/vivado/vvd_caravel_fpga/vvd_caravel_fpga.gen/sources_1/bd/design_1/ipshared/17de/hdl/verilog/userdma_gmem0_m_axi.v:2864]
+INFO: [Synth 8-6155] done synthesizing module 'userdma_gmem0_m_axi_fifo__parameterized4' (0#1) [/home/user/Documents/Code/ASoC/new_fsic/fsic_fpga/vivado/vvd_caravel_fpga/vvd_caravel_fpga.gen/sources_1/bd/design_1/ipshared/17de/hdl/verilog/userdma_gmem0_m_axi.v:2686]
+INFO: [Synth 8-6157] synthesizing module 'userdma_gmem0_m_axi_throttle' [/home/user/Documents/Code/ASoC/new_fsic/fsic_fpga/vivado/vvd_caravel_fpga/vvd_caravel_fpga.gen/sources_1/bd/design_1/ipshared/17de/hdl/verilog/userdma_gmem0_m_axi.v:2360]
+INFO: [Synth 8-6157] synthesizing module 'userdma_gmem0_m_axi_reg_slice__parameterized0' [/home/user/Documents/Code/ASoC/new_fsic/fsic_fpga/vivado/vvd_caravel_fpga/vvd_caravel_fpga.gen/sources_1/bd/design_1/ipshared/17de/hdl/verilog/userdma_gmem0_m_axi.v:2584]
+INFO: [Synth 8-6155] done synthesizing module 'userdma_gmem0_m_axi_reg_slice__parameterized0' (0#1) [/home/user/Documents/Code/ASoC/new_fsic/fsic_fpga/vivado/vvd_caravel_fpga/vvd_caravel_fpga.gen/sources_1/bd/design_1/ipshared/17de/hdl/verilog/userdma_gmem0_m_axi.v:2584]
+INFO: [Synth 8-6157] synthesizing module 'userdma_gmem0_m_axi_fifo__parameterized5' [/home/user/Documents/Code/ASoC/new_fsic/fsic_fpga/vivado/vvd_caravel_fpga/vvd_caravel_fpga.gen/sources_1/bd/design_1/ipshared/17de/hdl/verilog/userdma_gmem0_m_axi.v:2686]
+INFO: [Synth 8-6157] synthesizing module 'userdma_gmem0_m_axi_srl__parameterized3' [/home/user/Documents/Code/ASoC/new_fsic/fsic_fpga/vivado/vvd_caravel_fpga/vvd_caravel_fpga.gen/sources_1/bd/design_1/ipshared/17de/hdl/verilog/userdma_gmem0_m_axi.v:2864]
+INFO: [Synth 8-6155] done synthesizing module 'userdma_gmem0_m_axi_srl__parameterized3' (0#1) [/home/user/Documents/Code/ASoC/new_fsic/fsic_fpga/vivado/vvd_caravel_fpga/vvd_caravel_fpga.gen/sources_1/bd/design_1/ipshared/17de/hdl/verilog/userdma_gmem0_m_axi.v:2864]
+INFO: [Synth 8-6155] done synthesizing module 'userdma_gmem0_m_axi_fifo__parameterized5' (0#1) [/home/user/Documents/Code/ASoC/new_fsic/fsic_fpga/vivado/vvd_caravel_fpga/vvd_caravel_fpga.gen/sources_1/bd/design_1/ipshared/17de/hdl/verilog/userdma_gmem0_m_axi.v:2686]
+INFO: [Synth 8-6157] synthesizing module 'userdma_gmem0_m_axi_fifo__parameterized6' [/home/user/Documents/Code/ASoC/new_fsic/fsic_fpga/vivado/vvd_caravel_fpga/vvd_caravel_fpga.gen/sources_1/bd/design_1/ipshared/17de/hdl/verilog/userdma_gmem0_m_axi.v:2686]
+INFO: [Synth 8-6157] synthesizing module 'userdma_gmem0_m_axi_srl__parameterized4' [/home/user/Documents/Code/ASoC/new_fsic/fsic_fpga/vivado/vvd_caravel_fpga/vvd_caravel_fpga.gen/sources_1/bd/design_1/ipshared/17de/hdl/verilog/userdma_gmem0_m_axi.v:2864]
+INFO: [Synth 8-6155] done synthesizing module 'userdma_gmem0_m_axi_srl__parameterized4' (0#1) [/home/user/Documents/Code/ASoC/new_fsic/fsic_fpga/vivado/vvd_caravel_fpga/vvd_caravel_fpga.gen/sources_1/bd/design_1/ipshared/17de/hdl/verilog/userdma_gmem0_m_axi.v:2864]
+INFO: [Synth 8-6155] done synthesizing module 'userdma_gmem0_m_axi_fifo__parameterized6' (0#1) [/home/user/Documents/Code/ASoC/new_fsic/fsic_fpga/vivado/vvd_caravel_fpga/vvd_caravel_fpga.gen/sources_1/bd/design_1/ipshared/17de/hdl/verilog/userdma_gmem0_m_axi.v:2686]
+INFO: [Synth 8-6155] done synthesizing module 'userdma_gmem0_m_axi_throttle' (0#1) [/home/user/Documents/Code/ASoC/new_fsic/fsic_fpga/vivado/vvd_caravel_fpga/vvd_caravel_fpga.gen/sources_1/bd/design_1/ipshared/17de/hdl/verilog/userdma_gmem0_m_axi.v:2360]
+INFO: [Synth 8-6157] synthesizing module 'userdma_gmem0_m_axi_reg_slice__parameterized1' [/home/user/Documents/Code/ASoC/new_fsic/fsic_fpga/vivado/vvd_caravel_fpga/vvd_caravel_fpga.gen/sources_1/bd/design_1/ipshared/17de/hdl/verilog/userdma_gmem0_m_axi.v:2584]
+INFO: [Synth 8-6155] done synthesizing module 'userdma_gmem0_m_axi_reg_slice__parameterized1' (0#1) [/home/user/Documents/Code/ASoC/new_fsic/fsic_fpga/vivado/vvd_caravel_fpga/vvd_caravel_fpga.gen/sources_1/bd/design_1/ipshared/17de/hdl/verilog/userdma_gmem0_m_axi.v:2584]
+WARNING: [Synth 8-589] replacing case/wildcard equality operator === with logical equality operator == [/home/user/Documents/Code/ASoC/new_fsic/fsic_fpga/vivado/vvd_caravel_fpga/vvd_caravel_fpga.gen/sources_1/bd/design_1/ipshared/17de/hdl/verilog/userdma_gmem0_m_axi.v:2352]
+WARNING: [Synth 8-589] replacing case/wildcard equality operator === with logical equality operator == [/home/user/Documents/Code/ASoC/new_fsic/fsic_fpga/vivado/vvd_caravel_fpga/vvd_caravel_fpga.gen/sources_1/bd/design_1/ipshared/17de/hdl/verilog/userdma_gmem0_m_axi.v:2355]
+INFO: [Synth 8-6155] done synthesizing module 'userdma_gmem0_m_axi_write' (0#1) [/home/user/Documents/Code/ASoC/new_fsic/fsic_fpga/vivado/vvd_caravel_fpga/vvd_caravel_fpga.gen/sources_1/bd/design_1/ipshared/17de/hdl/verilog/userdma_gmem0_m_axi.v:1852]
+INFO: [Synth 8-6157] synthesizing module 'userdma_gmem0_m_axi_read' [/home/user/Documents/Code/ASoC/new_fsic/fsic_fpga/vivado/vvd_caravel_fpga/vvd_caravel_fpga.gen/sources_1/bd/design_1/ipshared/17de/hdl/verilog/userdma_gmem0_m_axi.v:1468]
+INFO: [Synth 8-6157] synthesizing module 'userdma_gmem0_m_axi_reg_slice__parameterized2' [/home/user/Documents/Code/ASoC/new_fsic/fsic_fpga/vivado/vvd_caravel_fpga/vvd_caravel_fpga.gen/sources_1/bd/design_1/ipshared/17de/hdl/verilog/userdma_gmem0_m_axi.v:2584]
+INFO: [Synth 8-6155] done synthesizing module 'userdma_gmem0_m_axi_reg_slice__parameterized2' (0#1) [/home/user/Documents/Code/ASoC/new_fsic/fsic_fpga/vivado/vvd_caravel_fpga/vvd_caravel_fpga.gen/sources_1/bd/design_1/ipshared/17de/hdl/verilog/userdma_gmem0_m_axi.v:2584]
+WARNING: [Synth 8-589] replacing case/wildcard equality operator === with logical equality operator == [/home/user/Documents/Code/ASoC/new_fsic/fsic_fpga/vivado/vvd_caravel_fpga/vvd_caravel_fpga.gen/sources_1/bd/design_1/ipshared/17de/hdl/verilog/userdma_gmem0_m_axi.v:1844]
+INFO: [Synth 8-6155] done synthesizing module 'userdma_gmem0_m_axi_read' (0#1) [/home/user/Documents/Code/ASoC/new_fsic/fsic_fpga/vivado/vvd_caravel_fpga/vvd_caravel_fpga.gen/sources_1/bd/design_1/ipshared/17de/hdl/verilog/userdma_gmem0_m_axi.v:1468]
+INFO: [Synth 8-6155] done synthesizing module 'userdma_gmem0_m_axi' (0#1) [/home/user/Documents/Code/ASoC/new_fsic/fsic_fpga/vivado/vvd_caravel_fpga/vvd_caravel_fpga.gen/sources_1/bd/design_1/ipshared/17de/hdl/verilog/userdma_gmem0_m_axi.v:11]
+INFO: [Synth 8-6157] synthesizing module 'userdma_gmem1_m_axi' [/home/user/Documents/Code/ASoC/new_fsic/fsic_fpga/vivado/vvd_caravel_fpga/vvd_caravel_fpga.gen/sources_1/bd/design_1/ipshared/17de/hdl/verilog/userdma_gmem1_m_axi.v:11]
+INFO: [Synth 8-6157] synthesizing module 'userdma_gmem1_m_axi_store' [/home/user/Documents/Code/ASoC/new_fsic/fsic_fpga/vivado/vvd_caravel_fpga/vvd_caravel_fpga.gen/sources_1/bd/design_1/ipshared/17de/hdl/verilog/userdma_gmem1_m_axi.v:780]
+INFO: [Synth 8-6157] synthesizing module 'userdma_gmem1_m_axi_fifo' [/home/user/Documents/Code/ASoC/new_fsic/fsic_fpga/vivado/vvd_caravel_fpga/vvd_caravel_fpga.gen/sources_1/bd/design_1/ipshared/17de/hdl/verilog/userdma_gmem1_m_axi.v:2686]
+INFO: [Synth 8-6157] synthesizing module 'userdma_gmem1_m_axi_srl' [/home/user/Documents/Code/ASoC/new_fsic/fsic_fpga/vivado/vvd_caravel_fpga/vvd_caravel_fpga.gen/sources_1/bd/design_1/ipshared/17de/hdl/verilog/userdma_gmem1_m_axi.v:2864]
+INFO: [Synth 8-6155] done synthesizing module 'userdma_gmem1_m_axi_srl' (0#1) [/home/user/Documents/Code/ASoC/new_fsic/fsic_fpga/vivado/vvd_caravel_fpga/vvd_caravel_fpga.gen/sources_1/bd/design_1/ipshared/17de/hdl/verilog/userdma_gmem1_m_axi.v:2864]
+INFO: [Synth 8-6155] done synthesizing module 'userdma_gmem1_m_axi_fifo' (0#1) [/home/user/Documents/Code/ASoC/new_fsic/fsic_fpga/vivado/vvd_caravel_fpga/vvd_caravel_fpga.gen/sources_1/bd/design_1/ipshared/17de/hdl/verilog/userdma_gmem1_m_axi.v:2686]
+INFO: [Synth 8-6157] synthesizing module 'userdma_gmem1_m_axi_fifo__parameterized0' [/home/user/Documents/Code/ASoC/new_fsic/fsic_fpga/vivado/vvd_caravel_fpga/vvd_caravel_fpga.gen/sources_1/bd/design_1/ipshared/17de/hdl/verilog/userdma_gmem1_m_axi.v:2686]
+INFO: [Synth 8-6157] synthesizing module 'userdma_gmem1_m_axi_mem' [/home/user/Documents/Code/ASoC/new_fsic/fsic_fpga/vivado/vvd_caravel_fpga/vvd_caravel_fpga.gen/sources_1/bd/design_1/ipshared/17de/hdl/verilog/userdma_gmem1_m_axi.v:2918]
+INFO: [Synth 8-6155] done synthesizing module 'userdma_gmem1_m_axi_mem' (0#1) [/home/user/Documents/Code/ASoC/new_fsic/fsic_fpga/vivado/vvd_caravel_fpga/vvd_caravel_fpga.gen/sources_1/bd/design_1/ipshared/17de/hdl/verilog/userdma_gmem1_m_axi.v:2918]
+INFO: [Synth 8-6155] done synthesizing module 'userdma_gmem1_m_axi_fifo__parameterized0' (0#1) [/home/user/Documents/Code/ASoC/new_fsic/fsic_fpga/vivado/vvd_caravel_fpga/vvd_caravel_fpga.gen/sources_1/bd/design_1/ipshared/17de/hdl/verilog/userdma_gmem1_m_axi.v:2686]
+INFO: [Synth 8-6157] synthesizing module 'userdma_gmem1_m_axi_fifo__parameterized1' [/home/user/Documents/Code/ASoC/new_fsic/fsic_fpga/vivado/vvd_caravel_fpga/vvd_caravel_fpga.gen/sources_1/bd/design_1/ipshared/17de/hdl/verilog/userdma_gmem1_m_axi.v:2686]
+INFO: [Synth 8-6157] synthesizing module 'userdma_gmem1_m_axi_srl__parameterized0' [/home/user/Documents/Code/ASoC/new_fsic/fsic_fpga/vivado/vvd_caravel_fpga/vvd_caravel_fpga.gen/sources_1/bd/design_1/ipshared/17de/hdl/verilog/userdma_gmem1_m_axi.v:2864]
+INFO: [Synth 8-6155] done synthesizing module 'userdma_gmem1_m_axi_srl__parameterized0' (0#1) [/home/user/Documents/Code/ASoC/new_fsic/fsic_fpga/vivado/vvd_caravel_fpga/vvd_caravel_fpga.gen/sources_1/bd/design_1/ipshared/17de/hdl/verilog/userdma_gmem1_m_axi.v:2864]
+INFO: [Synth 8-6155] done synthesizing module 'userdma_gmem1_m_axi_fifo__parameterized1' (0#1) [/home/user/Documents/Code/ASoC/new_fsic/fsic_fpga/vivado/vvd_caravel_fpga/vvd_caravel_fpga.gen/sources_1/bd/design_1/ipshared/17de/hdl/verilog/userdma_gmem1_m_axi.v:2686]
+INFO: [Synth 8-6157] synthesizing module 'userdma_gmem1_m_axi_fifo__parameterized2' [/home/user/Documents/Code/ASoC/new_fsic/fsic_fpga/vivado/vvd_caravel_fpga/vvd_caravel_fpga.gen/sources_1/bd/design_1/ipshared/17de/hdl/verilog/userdma_gmem1_m_axi.v:2686]
+INFO: [Synth 8-6157] synthesizing module 'userdma_gmem1_m_axi_srl__parameterized1' [/home/user/Documents/Code/ASoC/new_fsic/fsic_fpga/vivado/vvd_caravel_fpga/vvd_caravel_fpga.gen/sources_1/bd/design_1/ipshared/17de/hdl/verilog/userdma_gmem1_m_axi.v:2864]
+INFO: [Synth 8-6155] done synthesizing module 'userdma_gmem1_m_axi_srl__parameterized1' (0#1) [/home/user/Documents/Code/ASoC/new_fsic/fsic_fpga/vivado/vvd_caravel_fpga/vvd_caravel_fpga.gen/sources_1/bd/design_1/ipshared/17de/hdl/verilog/userdma_gmem1_m_axi.v:2864]
+INFO: [Synth 8-6155] done synthesizing module 'userdma_gmem1_m_axi_fifo__parameterized2' (0#1) [/home/user/Documents/Code/ASoC/new_fsic/fsic_fpga/vivado/vvd_caravel_fpga/vvd_caravel_fpga.gen/sources_1/bd/design_1/ipshared/17de/hdl/verilog/userdma_gmem1_m_axi.v:2686]
+INFO: [Synth 8-6155] done synthesizing module 'userdma_gmem1_m_axi_store' (0#1) [/home/user/Documents/Code/ASoC/new_fsic/fsic_fpga/vivado/vvd_caravel_fpga/vvd_caravel_fpga.gen/sources_1/bd/design_1/ipshared/17de/hdl/verilog/userdma_gmem1_m_axi.v:780]
+INFO: [Synth 8-6157] synthesizing module 'userdma_gmem1_m_axi_load' [/home/user/Documents/Code/ASoC/new_fsic/fsic_fpga/vivado/vvd_caravel_fpga/vvd_caravel_fpga.gen/sources_1/bd/design_1/ipshared/17de/hdl/verilog/userdma_gmem1_m_axi.v:324]
+INFO: [Synth 8-6157] synthesizing module 'userdma_gmem1_m_axi_fifo__parameterized3' [/home/user/Documents/Code/ASoC/new_fsic/fsic_fpga/vivado/vvd_caravel_fpga/vvd_caravel_fpga.gen/sources_1/bd/design_1/ipshared/17de/hdl/verilog/userdma_gmem1_m_axi.v:2686]
+INFO: [Synth 8-6157] synthesizing module 'userdma_gmem1_m_axi_mem__parameterized0' [/home/user/Documents/Code/ASoC/new_fsic/fsic_fpga/vivado/vvd_caravel_fpga/vvd_caravel_fpga.gen/sources_1/bd/design_1/ipshared/17de/hdl/verilog/userdma_gmem1_m_axi.v:2918]
+INFO: [Synth 8-6155] done synthesizing module 'userdma_gmem1_m_axi_mem__parameterized0' (0#1) [/home/user/Documents/Code/ASoC/new_fsic/fsic_fpga/vivado/vvd_caravel_fpga/vvd_caravel_fpga.gen/sources_1/bd/design_1/ipshared/17de/hdl/verilog/userdma_gmem1_m_axi.v:2918]
+INFO: [Synth 8-6155] done synthesizing module 'userdma_gmem1_m_axi_fifo__parameterized3' (0#1) [/home/user/Documents/Code/ASoC/new_fsic/fsic_fpga/vivado/vvd_caravel_fpga/vvd_caravel_fpga.gen/sources_1/bd/design_1/ipshared/17de/hdl/verilog/userdma_gmem1_m_axi.v:2686]
+INFO: [Synth 8-6155] done synthesizing module 'userdma_gmem1_m_axi_load' (0#1) [/home/user/Documents/Code/ASoC/new_fsic/fsic_fpga/vivado/vvd_caravel_fpga/vvd_caravel_fpga.gen/sources_1/bd/design_1/ipshared/17de/hdl/verilog/userdma_gmem1_m_axi.v:324]
+INFO: [Synth 8-6157] synthesizing module 'userdma_gmem1_m_axi_write' [/home/user/Documents/Code/ASoC/new_fsic/fsic_fpga/vivado/vvd_caravel_fpga/vvd_caravel_fpga.gen/sources_1/bd/design_1/ipshared/17de/hdl/verilog/userdma_gmem1_m_axi.v:1852]
+INFO: [Synth 8-6157] synthesizing module 'userdma_gmem1_m_axi_reg_slice' [/home/user/Documents/Code/ASoC/new_fsic/fsic_fpga/vivado/vvd_caravel_fpga/vvd_caravel_fpga.gen/sources_1/bd/design_1/ipshared/17de/hdl/verilog/userdma_gmem1_m_axi.v:2584]
+INFO: [Synth 8-6155] done synthesizing module 'userdma_gmem1_m_axi_reg_slice' (0#1) [/home/user/Documents/Code/ASoC/new_fsic/fsic_fpga/vivado/vvd_caravel_fpga/vvd_caravel_fpga.gen/sources_1/bd/design_1/ipshared/17de/hdl/verilog/userdma_gmem1_m_axi.v:2584]
+INFO: [Synth 8-6157] synthesizing module 'userdma_gmem1_m_axi_fifo__parameterized4' [/home/user/Documents/Code/ASoC/new_fsic/fsic_fpga/vivado/vvd_caravel_fpga/vvd_caravel_fpga.gen/sources_1/bd/design_1/ipshared/17de/hdl/verilog/userdma_gmem1_m_axi.v:2686]
+INFO: [Synth 8-6157] synthesizing module 'userdma_gmem1_m_axi_srl__parameterized2' [/home/user/Documents/Code/ASoC/new_fsic/fsic_fpga/vivado/vvd_caravel_fpga/vvd_caravel_fpga.gen/sources_1/bd/design_1/ipshared/17de/hdl/verilog/userdma_gmem1_m_axi.v:2864]
+INFO: [Synth 8-6155] done synthesizing module 'userdma_gmem1_m_axi_srl__parameterized2' (0#1) [/home/user/Documents/Code/ASoC/new_fsic/fsic_fpga/vivado/vvd_caravel_fpga/vvd_caravel_fpga.gen/sources_1/bd/design_1/ipshared/17de/hdl/verilog/userdma_gmem1_m_axi.v:2864]
+INFO: [Synth 8-6155] done synthesizing module 'userdma_gmem1_m_axi_fifo__parameterized4' (0#1) [/home/user/Documents/Code/ASoC/new_fsic/fsic_fpga/vivado/vvd_caravel_fpga/vvd_caravel_fpga.gen/sources_1/bd/design_1/ipshared/17de/hdl/verilog/userdma_gmem1_m_axi.v:2686]
+INFO: [Synth 8-6157] synthesizing module 'userdma_gmem1_m_axi_throttle' [/home/user/Documents/Code/ASoC/new_fsic/fsic_fpga/vivado/vvd_caravel_fpga/vvd_caravel_fpga.gen/sources_1/bd/design_1/ipshared/17de/hdl/verilog/userdma_gmem1_m_axi.v:2360]
+INFO: [Synth 8-6157] synthesizing module 'userdma_gmem1_m_axi_reg_slice__parameterized0' [/home/user/Documents/Code/ASoC/new_fsic/fsic_fpga/vivado/vvd_caravel_fpga/vvd_caravel_fpga.gen/sources_1/bd/design_1/ipshared/17de/hdl/verilog/userdma_gmem1_m_axi.v:2584]
+INFO: [Synth 8-6155] done synthesizing module 'userdma_gmem1_m_axi_reg_slice__parameterized0' (0#1) [/home/user/Documents/Code/ASoC/new_fsic/fsic_fpga/vivado/vvd_caravel_fpga/vvd_caravel_fpga.gen/sources_1/bd/design_1/ipshared/17de/hdl/verilog/userdma_gmem1_m_axi.v:2584]
+INFO: [Synth 8-6157] synthesizing module 'userdma_gmem1_m_axi_fifo__parameterized5' [/home/user/Documents/Code/ASoC/new_fsic/fsic_fpga/vivado/vvd_caravel_fpga/vvd_caravel_fpga.gen/sources_1/bd/design_1/ipshared/17de/hdl/verilog/userdma_gmem1_m_axi.v:2686]
+INFO: [Synth 8-6157] synthesizing module 'userdma_gmem1_m_axi_srl__parameterized3' [/home/user/Documents/Code/ASoC/new_fsic/fsic_fpga/vivado/vvd_caravel_fpga/vvd_caravel_fpga.gen/sources_1/bd/design_1/ipshared/17de/hdl/verilog/userdma_gmem1_m_axi.v:2864]
+INFO: [Synth 8-6155] done synthesizing module 'userdma_gmem1_m_axi_srl__parameterized3' (0#1) [/home/user/Documents/Code/ASoC/new_fsic/fsic_fpga/vivado/vvd_caravel_fpga/vvd_caravel_fpga.gen/sources_1/bd/design_1/ipshared/17de/hdl/verilog/userdma_gmem1_m_axi.v:2864]
+INFO: [Synth 8-6155] done synthesizing module 'userdma_gmem1_m_axi_fifo__parameterized5' (0#1) [/home/user/Documents/Code/ASoC/new_fsic/fsic_fpga/vivado/vvd_caravel_fpga/vvd_caravel_fpga.gen/sources_1/bd/design_1/ipshared/17de/hdl/verilog/userdma_gmem1_m_axi.v:2686]
+INFO: [Synth 8-6157] synthesizing module 'userdma_gmem1_m_axi_fifo__parameterized6' [/home/user/Documents/Code/ASoC/new_fsic/fsic_fpga/vivado/vvd_caravel_fpga/vvd_caravel_fpga.gen/sources_1/bd/design_1/ipshared/17de/hdl/verilog/userdma_gmem1_m_axi.v:2686]
+INFO: [Synth 8-6157] synthesizing module 'userdma_gmem1_m_axi_srl__parameterized4' [/home/user/Documents/Code/ASoC/new_fsic/fsic_fpga/vivado/vvd_caravel_fpga/vvd_caravel_fpga.gen/sources_1/bd/design_1/ipshared/17de/hdl/verilog/userdma_gmem1_m_axi.v:2864]
+INFO: [Synth 8-6155] done synthesizing module 'userdma_gmem1_m_axi_srl__parameterized4' (0#1) [/home/user/Documents/Code/ASoC/new_fsic/fsic_fpga/vivado/vvd_caravel_fpga/vvd_caravel_fpga.gen/sources_1/bd/design_1/ipshared/17de/hdl/verilog/userdma_gmem1_m_axi.v:2864]
+INFO: [Synth 8-6155] done synthesizing module 'userdma_gmem1_m_axi_fifo__parameterized6' (0#1) [/home/user/Documents/Code/ASoC/new_fsic/fsic_fpga/vivado/vvd_caravel_fpga/vvd_caravel_fpga.gen/sources_1/bd/design_1/ipshared/17de/hdl/verilog/userdma_gmem1_m_axi.v:2686]
+INFO: [Synth 8-6155] done synthesizing module 'userdma_gmem1_m_axi_throttle' (0#1) [/home/user/Documents/Code/ASoC/new_fsic/fsic_fpga/vivado/vvd_caravel_fpga/vvd_caravel_fpga.gen/sources_1/bd/design_1/ipshared/17de/hdl/verilog/userdma_gmem1_m_axi.v:2360]
+INFO: [Synth 8-6157] synthesizing module 'userdma_gmem1_m_axi_reg_slice__parameterized1' [/home/user/Documents/Code/ASoC/new_fsic/fsic_fpga/vivado/vvd_caravel_fpga/vvd_caravel_fpga.gen/sources_1/bd/design_1/ipshared/17de/hdl/verilog/userdma_gmem1_m_axi.v:2584]
+INFO: [Synth 8-6155] done synthesizing module 'userdma_gmem1_m_axi_reg_slice__parameterized1' (0#1) [/home/user/Documents/Code/ASoC/new_fsic/fsic_fpga/vivado/vvd_caravel_fpga/vvd_caravel_fpga.gen/sources_1/bd/design_1/ipshared/17de/hdl/verilog/userdma_gmem1_m_axi.v:2584]
+WARNING: [Synth 8-589] replacing case/wildcard equality operator === with logical equality operator == [/home/user/Documents/Code/ASoC/new_fsic/fsic_fpga/vivado/vvd_caravel_fpga/vvd_caravel_fpga.gen/sources_1/bd/design_1/ipshared/17de/hdl/verilog/userdma_gmem1_m_axi.v:2352]
+WARNING: [Synth 8-589] replacing case/wildcard equality operator === with logical equality operator == [/home/user/Documents/Code/ASoC/new_fsic/fsic_fpga/vivado/vvd_caravel_fpga/vvd_caravel_fpga.gen/sources_1/bd/design_1/ipshared/17de/hdl/verilog/userdma_gmem1_m_axi.v:2355]
+INFO: [Synth 8-6155] done synthesizing module 'userdma_gmem1_m_axi_write' (0#1) [/home/user/Documents/Code/ASoC/new_fsic/fsic_fpga/vivado/vvd_caravel_fpga/vvd_caravel_fpga.gen/sources_1/bd/design_1/ipshared/17de/hdl/verilog/userdma_gmem1_m_axi.v:1852]
+INFO: [Synth 8-6157] synthesizing module 'userdma_gmem1_m_axi_read' [/home/user/Documents/Code/ASoC/new_fsic/fsic_fpga/vivado/vvd_caravel_fpga/vvd_caravel_fpga.gen/sources_1/bd/design_1/ipshared/17de/hdl/verilog/userdma_gmem1_m_axi.v:1468]
+INFO: [Synth 8-6157] synthesizing module 'userdma_gmem1_m_axi_reg_slice__parameterized2' [/home/user/Documents/Code/ASoC/new_fsic/fsic_fpga/vivado/vvd_caravel_fpga/vvd_caravel_fpga.gen/sources_1/bd/design_1/ipshared/17de/hdl/verilog/userdma_gmem1_m_axi.v:2584]
+INFO: [Synth 8-6155] done synthesizing module 'userdma_gmem1_m_axi_reg_slice__parameterized2' (0#1) [/home/user/Documents/Code/ASoC/new_fsic/fsic_fpga/vivado/vvd_caravel_fpga/vvd_caravel_fpga.gen/sources_1/bd/design_1/ipshared/17de/hdl/verilog/userdma_gmem1_m_axi.v:2584]
+WARNING: [Synth 8-589] replacing case/wildcard equality operator === with logical equality operator == [/home/user/Documents/Code/ASoC/new_fsic/fsic_fpga/vivado/vvd_caravel_fpga/vvd_caravel_fpga.gen/sources_1/bd/design_1/ipshared/17de/hdl/verilog/userdma_gmem1_m_axi.v:1844]
+INFO: [Synth 8-6155] done synthesizing module 'userdma_gmem1_m_axi_read' (0#1) [/home/user/Documents/Code/ASoC/new_fsic/fsic_fpga/vivado/vvd_caravel_fpga/vvd_caravel_fpga.gen/sources_1/bd/design_1/ipshared/17de/hdl/verilog/userdma_gmem1_m_axi.v:1468]
+INFO: [Synth 8-6155] done synthesizing module 'userdma_gmem1_m_axi' (0#1) [/home/user/Documents/Code/ASoC/new_fsic/fsic_fpga/vivado/vvd_caravel_fpga/vvd_caravel_fpga.gen/sources_1/bd/design_1/ipshared/17de/hdl/verilog/userdma_gmem1_m_axi.v:11]
+INFO: [Synth 8-6157] synthesizing module 'userdma_entry_proc' [/home/user/Documents/Code/ASoC/new_fsic/fsic_fpga/vivado/vvd_caravel_fpga/vvd_caravel_fpga.gen/sources_1/bd/design_1/ipshared/17de/hdl/verilog/userdma_entry_proc.v:10]
+INFO: [Synth 8-6155] done synthesizing module 'userdma_entry_proc' (0#1) [/home/user/Documents/Code/ASoC/new_fsic/fsic_fpga/vivado/vvd_caravel_fpga/vvd_caravel_fpga.gen/sources_1/bd/design_1/ipshared/17de/hdl/verilog/userdma_entry_proc.v:10]
+INFO: [Synth 8-6157] synthesizing module 'userdma_getinstream' [/home/user/Documents/Code/ASoC/new_fsic/fsic_fpga/vivado/vvd_caravel_fpga/vvd_caravel_fpga.gen/sources_1/bd/design_1/ipshared/17de/hdl/verilog/userdma_getinstream.v:10]
+INFO: [Synth 8-6157] synthesizing module 'userdma_getinstream_Pipeline_VITIS_LOOP_48_1' [/home/user/Documents/Code/ASoC/new_fsic/fsic_fpga/vivado/vvd_caravel_fpga/vvd_caravel_fpga.gen/sources_1/bd/design_1/ipshared/17de/hdl/verilog/userdma_getinstream_Pipeline_VITIS_LOOP_48_1.v:10]
+INFO: [Synth 8-6157] synthesizing module 'userdma_flow_control_loop_pipe_sequential_init' [/home/user/Documents/Code/ASoC/new_fsic/fsic_fpga/vivado/vvd_caravel_fpga/vvd_caravel_fpga.gen/sources_1/bd/design_1/ipshared/17de/hdl/verilog/userdma_flow_control_loop_pipe_sequential_init.v:9]
+INFO: [Synth 8-6155] done synthesizing module 'userdma_flow_control_loop_pipe_sequential_init' (0#1) [/home/user/Documents/Code/ASoC/new_fsic/fsic_fpga/vivado/vvd_caravel_fpga/vvd_caravel_fpga.gen/sources_1/bd/design_1/ipshared/17de/hdl/verilog/userdma_flow_control_loop_pipe_sequential_init.v:9]
+INFO: [Synth 8-6155] done synthesizing module 'userdma_getinstream_Pipeline_VITIS_LOOP_48_1' (0#1) [/home/user/Documents/Code/ASoC/new_fsic/fsic_fpga/vivado/vvd_caravel_fpga/vvd_caravel_fpga.gen/sources_1/bd/design_1/ipshared/17de/hdl/verilog/userdma_getinstream_Pipeline_VITIS_LOOP_48_1.v:10]
+INFO: [Synth 8-6157] synthesizing module 'userdma_regslice_both' [/home/user/Documents/Code/ASoC/new_fsic/fsic_fpga/vivado/vvd_caravel_fpga/vvd_caravel_fpga.gen/sources_1/bd/design_1/ipshared/17de/hdl/verilog/userdma_regslice_both.v:9]
+INFO: [Synth 8-6155] done synthesizing module 'userdma_regslice_both' (0#1) [/home/user/Documents/Code/ASoC/new_fsic/fsic_fpga/vivado/vvd_caravel_fpga/vvd_caravel_fpga.gen/sources_1/bd/design_1/ipshared/17de/hdl/verilog/userdma_regslice_both.v:9]
+INFO: [Synth 8-6157] synthesizing module 'userdma_regslice_both__parameterized0' [/home/user/Documents/Code/ASoC/new_fsic/fsic_fpga/vivado/vvd_caravel_fpga/vvd_caravel_fpga.gen/sources_1/bd/design_1/ipshared/17de/hdl/verilog/userdma_regslice_both.v:9]
+INFO: [Synth 8-6155] done synthesizing module 'userdma_regslice_both__parameterized0' (0#1) [/home/user/Documents/Code/ASoC/new_fsic/fsic_fpga/vivado/vvd_caravel_fpga/vvd_caravel_fpga.gen/sources_1/bd/design_1/ipshared/17de/hdl/verilog/userdma_regslice_both.v:9]
+INFO: [Synth 8-6157] synthesizing module 'userdma_regslice_both__parameterized1' [/home/user/Documents/Code/ASoC/new_fsic/fsic_fpga/vivado/vvd_caravel_fpga/vvd_caravel_fpga.gen/sources_1/bd/design_1/ipshared/17de/hdl/verilog/userdma_regslice_both.v:9]
+INFO: [Synth 8-6155] done synthesizing module 'userdma_regslice_both__parameterized1' (0#1) [/home/user/Documents/Code/ASoC/new_fsic/fsic_fpga/vivado/vvd_caravel_fpga/vvd_caravel_fpga.gen/sources_1/bd/design_1/ipshared/17de/hdl/verilog/userdma_regslice_both.v:9]
+INFO: [Synth 8-6157] synthesizing module 'userdma_regslice_both__parameterized2' [/home/user/Documents/Code/ASoC/new_fsic/fsic_fpga/vivado/vvd_caravel_fpga/vvd_caravel_fpga.gen/sources_1/bd/design_1/ipshared/17de/hdl/verilog/userdma_regslice_both.v:9]
+INFO: [Synth 8-6155] done synthesizing module 'userdma_regslice_both__parameterized2' (0#1) [/home/user/Documents/Code/ASoC/new_fsic/fsic_fpga/vivado/vvd_caravel_fpga/vvd_caravel_fpga.gen/sources_1/bd/design_1/ipshared/17de/hdl/verilog/userdma_regslice_both.v:9]
+INFO: [Synth 8-6155] done synthesizing module 'userdma_getinstream' (0#1) [/home/user/Documents/Code/ASoC/new_fsic/fsic_fpga/vivado/vvd_caravel_fpga/vvd_caravel_fpga.gen/sources_1/bd/design_1/ipshared/17de/hdl/verilog/userdma_getinstream.v:10]
+INFO: [Synth 8-6157] synthesizing module 'userdma_streamtoparallelwithburst' [/home/user/Documents/Code/ASoC/new_fsic/fsic_fpga/vivado/vvd_caravel_fpga/vvd_caravel_fpga.gen/sources_1/bd/design_1/ipshared/17de/hdl/verilog/userdma_streamtoparallelwithburst.v:10]
+INFO: [Synth 8-6157] synthesizing module 'userdma_streamtoparallelwithburst_Pipeline_VITIS_LOOP_23_2' [/home/user/Documents/Code/ASoC/new_fsic/fsic_fpga/vivado/vvd_caravel_fpga/vvd_caravel_fpga.gen/sources_1/bd/design_1/ipshared/17de/hdl/verilog/userdma_streamtoparallelwithburst_Pipeline_VITIS_LOOP_23_2.v:10]
+INFO: [Synth 8-6155] done synthesizing module 'userdma_streamtoparallelwithburst_Pipeline_VITIS_LOOP_23_2' (0#1) [/home/user/Documents/Code/ASoC/new_fsic/fsic_fpga/vivado/vvd_caravel_fpga/vvd_caravel_fpga.gen/sources_1/bd/design_1/ipshared/17de/hdl/verilog/userdma_streamtoparallelwithburst_Pipeline_VITIS_LOOP_23_2.v:10]
+INFO: [Synth 8-6155] done synthesizing module 'userdma_streamtoparallelwithburst' (0#1) [/home/user/Documents/Code/ASoC/new_fsic/fsic_fpga/vivado/vvd_caravel_fpga/vvd_caravel_fpga.gen/sources_1/bd/design_1/ipshared/17de/hdl/verilog/userdma_streamtoparallelwithburst.v:10]
+INFO: [Synth 8-6157] synthesizing module 'userdma_paralleltostreamwithburst' [/home/user/Documents/Code/ASoC/new_fsic/fsic_fpga/vivado/vvd_caravel_fpga/vvd_caravel_fpga.gen/sources_1/bd/design_1/ipshared/17de/hdl/verilog/userdma_paralleltostreamwithburst.v:10]
+INFO: [Synth 8-6157] synthesizing module 'userdma_paralleltostreamwithburst_Pipeline_VITIS_LOOP_106_2' [/home/user/Documents/Code/ASoC/new_fsic/fsic_fpga/vivado/vvd_caravel_fpga/vvd_caravel_fpga.gen/sources_1/bd/design_1/ipshared/17de/hdl/verilog/userdma_paralleltostreamwithburst_Pipeline_VITIS_LOOP_106_2.v:10]
+INFO: [Synth 8-6155] done synthesizing module 'userdma_paralleltostreamwithburst_Pipeline_VITIS_LOOP_106_2' (0#1) [/home/user/Documents/Code/ASoC/new_fsic/fsic_fpga/vivado/vvd_caravel_fpga/vvd_caravel_fpga.gen/sources_1/bd/design_1/ipshared/17de/hdl/verilog/userdma_paralleltostreamwithburst_Pipeline_VITIS_LOOP_106_2.v:10]
+INFO: [Synth 8-6155] done synthesizing module 'userdma_paralleltostreamwithburst' (0#1) [/home/user/Documents/Code/ASoC/new_fsic/fsic_fpga/vivado/vvd_caravel_fpga/vvd_caravel_fpga.gen/sources_1/bd/design_1/ipshared/17de/hdl/verilog/userdma_paralleltostreamwithburst.v:10]
+INFO: [Synth 8-6157] synthesizing module 'userdma_sendoutstream' [/home/user/Documents/Code/ASoC/new_fsic/fsic_fpga/vivado/vvd_caravel_fpga/vvd_caravel_fpga.gen/sources_1/bd/design_1/ipshared/17de/hdl/verilog/userdma_sendoutstream.v:10]
+INFO: [Synth 8-6157] synthesizing module 'userdma_sendoutstream_Pipeline_VITIS_LOOP_149_2' [/home/user/Documents/Code/ASoC/new_fsic/fsic_fpga/vivado/vvd_caravel_fpga/vvd_caravel_fpga.gen/sources_1/bd/design_1/ipshared/17de/hdl/verilog/userdma_sendoutstream_Pipeline_VITIS_LOOP_149_2.v:10]
+INFO: [Synth 8-6155] done synthesizing module 'userdma_sendoutstream_Pipeline_VITIS_LOOP_149_2' (0#1) [/home/user/Documents/Code/ASoC/new_fsic/fsic_fpga/vivado/vvd_caravel_fpga/vvd_caravel_fpga.gen/sources_1/bd/design_1/ipshared/17de/hdl/verilog/userdma_sendoutstream_Pipeline_VITIS_LOOP_149_2.v:10]
+INFO: [Synth 8-6155] done synthesizing module 'userdma_sendoutstream' (0#1) [/home/user/Documents/Code/ASoC/new_fsic/fsic_fpga/vivado/vvd_caravel_fpga/vvd_caravel_fpga.gen/sources_1/bd/design_1/ipshared/17de/hdl/verilog/userdma_sendoutstream.v:10]
+INFO: [Synth 8-6157] synthesizing module 'userdma_fifo_w1_d3_S' [/home/user/Documents/Code/ASoC/new_fsic/fsic_fpga/vivado/vvd_caravel_fpga/vvd_caravel_fpga.gen/sources_1/bd/design_1/ipshared/17de/hdl/verilog/userdma_fifo_w1_d3_S.v:43]
+INFO: [Synth 8-6157] synthesizing module 'userdma_fifo_w1_d3_S_shiftReg' [/home/user/Documents/Code/ASoC/new_fsic/fsic_fpga/vivado/vvd_caravel_fpga/vvd_caravel_fpga.gen/sources_1/bd/design_1/ipshared/17de/hdl/verilog/userdma_fifo_w1_d3_S.v:9]
+INFO: [Synth 8-6155] done synthesizing module 'userdma_fifo_w1_d3_S_shiftReg' (0#1) [/home/user/Documents/Code/ASoC/new_fsic/fsic_fpga/vivado/vvd_caravel_fpga/vvd_caravel_fpga.gen/sources_1/bd/design_1/ipshared/17de/hdl/verilog/userdma_fifo_w1_d3_S.v:9]
+INFO: [Synth 8-6155] done synthesizing module 'userdma_fifo_w1_d3_S' (0#1) [/home/user/Documents/Code/ASoC/new_fsic/fsic_fpga/vivado/vvd_caravel_fpga/vvd_caravel_fpga.gen/sources_1/bd/design_1/ipshared/17de/hdl/verilog/userdma_fifo_w1_d3_S.v:43]
+INFO: [Synth 8-6157] synthesizing module 'userdma_fifo_w64_d3_S' [/home/user/Documents/Code/ASoC/new_fsic/fsic_fpga/vivado/vvd_caravel_fpga/vvd_caravel_fpga.gen/sources_1/bd/design_1/ipshared/17de/hdl/verilog/userdma_fifo_w64_d3_S.v:43]
+INFO: [Synth 8-6157] synthesizing module 'userdma_fifo_w64_d3_S_shiftReg' [/home/user/Documents/Code/ASoC/new_fsic/fsic_fpga/vivado/vvd_caravel_fpga/vvd_caravel_fpga.gen/sources_1/bd/design_1/ipshared/17de/hdl/verilog/userdma_fifo_w64_d3_S.v:9]
+INFO: [Synth 8-6155] done synthesizing module 'userdma_fifo_w64_d3_S_shiftReg' (0#1) [/home/user/Documents/Code/ASoC/new_fsic/fsic_fpga/vivado/vvd_caravel_fpga/vvd_caravel_fpga.gen/sources_1/bd/design_1/ipshared/17de/hdl/verilog/userdma_fifo_w64_d3_S.v:9]
+INFO: [Synth 8-6155] done synthesizing module 'userdma_fifo_w64_d3_S' (0#1) [/home/user/Documents/Code/ASoC/new_fsic/fsic_fpga/vivado/vvd_caravel_fpga/vvd_caravel_fpga.gen/sources_1/bd/design_1/ipshared/17de/hdl/verilog/userdma_fifo_w64_d3_S.v:43]
+INFO: [Synth 8-6157] synthesizing module 'userdma_fifo_w33_d1024_A' [/home/user/Documents/Code/ASoC/new_fsic/fsic_fpga/vivado/vvd_caravel_fpga/vvd_caravel_fpga.gen/sources_1/bd/design_1/ipshared/17de/hdl/verilog/userdma_fifo_w33_d1024_A.v:52]
+INFO: [Synth 8-6157] synthesizing module 'userdma_fifo_w33_d1024_A_ram' [/home/user/Documents/Code/ASoC/new_fsic/fsic_fpga/vivado/vvd_caravel_fpga/vvd_caravel_fpga.gen/sources_1/bd/design_1/ipshared/17de/hdl/verilog/userdma_fifo_w33_d1024_A.v:9]
+INFO: [Synth 8-6155] done synthesizing module 'userdma_fifo_w33_d1024_A_ram' (0#1) [/home/user/Documents/Code/ASoC/new_fsic/fsic_fpga/vivado/vvd_caravel_fpga/vvd_caravel_fpga.gen/sources_1/bd/design_1/ipshared/17de/hdl/verilog/userdma_fifo_w33_d1024_A.v:9]
+INFO: [Synth 8-6155] done synthesizing module 'userdma_fifo_w33_d1024_A' (0#1) [/home/user/Documents/Code/ASoC/new_fsic/fsic_fpga/vivado/vvd_caravel_fpga/vvd_caravel_fpga.gen/sources_1/bd/design_1/ipshared/17de/hdl/verilog/userdma_fifo_w33_d1024_A.v:52]
+INFO: [Synth 8-6157] synthesizing module 'userdma_fifo_w32_d64_A' [/home/user/Documents/Code/ASoC/new_fsic/fsic_fpga/vivado/vvd_caravel_fpga/vvd_caravel_fpga.gen/sources_1/bd/design_1/ipshared/17de/hdl/verilog/userdma_fifo_w32_d64_A.v:52]
+INFO: [Synth 8-6157] synthesizing module 'userdma_fifo_w32_d64_A_ram' [/home/user/Documents/Code/ASoC/new_fsic/fsic_fpga/vivado/vvd_caravel_fpga/vvd_caravel_fpga.gen/sources_1/bd/design_1/ipshared/17de/hdl/verilog/userdma_fifo_w32_d64_A.v:9]
+INFO: [Synth 8-6155] done synthesizing module 'userdma_fifo_w32_d64_A_ram' (0#1) [/home/user/Documents/Code/ASoC/new_fsic/fsic_fpga/vivado/vvd_caravel_fpga/vvd_caravel_fpga.gen/sources_1/bd/design_1/ipshared/17de/hdl/verilog/userdma_fifo_w32_d64_A.v:9]
+INFO: [Synth 8-6155] done synthesizing module 'userdma_fifo_w32_d64_A' (0#1) [/home/user/Documents/Code/ASoC/new_fsic/fsic_fpga/vivado/vvd_caravel_fpga/vvd_caravel_fpga.gen/sources_1/bd/design_1/ipshared/17de/hdl/verilog/userdma_fifo_w32_d64_A.v:52]
+INFO: [Synth 8-6157] synthesizing module 'userdma_fifo_w32_d2_S' [/home/user/Documents/Code/ASoC/new_fsic/fsic_fpga/vivado/vvd_caravel_fpga/vvd_caravel_fpga.gen/sources_1/bd/design_1/ipshared/17de/hdl/verilog/userdma_fifo_w32_d2_S.v:43]
+INFO: [Synth 8-6157] synthesizing module 'userdma_fifo_w32_d2_S_shiftReg' [/home/user/Documents/Code/ASoC/new_fsic/fsic_fpga/vivado/vvd_caravel_fpga/vvd_caravel_fpga.gen/sources_1/bd/design_1/ipshared/17de/hdl/verilog/userdma_fifo_w32_d2_S.v:9]
+INFO: [Synth 8-6155] done synthesizing module 'userdma_fifo_w32_d2_S_shiftReg' (0#1) [/home/user/Documents/Code/ASoC/new_fsic/fsic_fpga/vivado/vvd_caravel_fpga/vvd_caravel_fpga.gen/sources_1/bd/design_1/ipshared/17de/hdl/verilog/userdma_fifo_w32_d2_S.v:9]
+INFO: [Synth 8-6155] done synthesizing module 'userdma_fifo_w32_d2_S' (0#1) [/home/user/Documents/Code/ASoC/new_fsic/fsic_fpga/vivado/vvd_caravel_fpga/vvd_caravel_fpga.gen/sources_1/bd/design_1/ipshared/17de/hdl/verilog/userdma_fifo_w32_d2_S.v:43]
+INFO: [Synth 8-6157] synthesizing module 'userdma_fifo_w1_d2_S' [/home/user/Documents/Code/ASoC/new_fsic/fsic_fpga/vivado/vvd_caravel_fpga/vvd_caravel_fpga.gen/sources_1/bd/design_1/ipshared/17de/hdl/verilog/userdma_fifo_w1_d2_S.v:43]
+INFO: [Synth 8-6157] synthesizing module 'userdma_fifo_w1_d2_S_shiftReg' [/home/user/Documents/Code/ASoC/new_fsic/fsic_fpga/vivado/vvd_caravel_fpga/vvd_caravel_fpga.gen/sources_1/bd/design_1/ipshared/17de/hdl/verilog/userdma_fifo_w1_d2_S.v:9]
+INFO: [Synth 8-6155] done synthesizing module 'userdma_fifo_w1_d2_S_shiftReg' (0#1) [/home/user/Documents/Code/ASoC/new_fsic/fsic_fpga/vivado/vvd_caravel_fpga/vvd_caravel_fpga.gen/sources_1/bd/design_1/ipshared/17de/hdl/verilog/userdma_fifo_w1_d2_S.v:9]
+INFO: [Synth 8-6155] done synthesizing module 'userdma_fifo_w1_d2_S' (0#1) [/home/user/Documents/Code/ASoC/new_fsic/fsic_fpga/vivado/vvd_caravel_fpga/vvd_caravel_fpga.gen/sources_1/bd/design_1/ipshared/17de/hdl/verilog/userdma_fifo_w1_d2_S.v:43]
+INFO: [Synth 8-6157] synthesizing module 'userdma_fifo_w40_d1024_A' [/home/user/Documents/Code/ASoC/new_fsic/fsic_fpga/vivado/vvd_caravel_fpga/vvd_caravel_fpga.gen/sources_1/bd/design_1/ipshared/17de/hdl/verilog/userdma_fifo_w40_d1024_A.v:52]
+INFO: [Synth 8-6157] synthesizing module 'userdma_fifo_w40_d1024_A_ram' [/home/user/Documents/Code/ASoC/new_fsic/fsic_fpga/vivado/vvd_caravel_fpga/vvd_caravel_fpga.gen/sources_1/bd/design_1/ipshared/17de/hdl/verilog/userdma_fifo_w40_d1024_A.v:9]
+INFO: [Synth 8-6155] done synthesizing module 'userdma_fifo_w40_d1024_A_ram' (0#1) [/home/user/Documents/Code/ASoC/new_fsic/fsic_fpga/vivado/vvd_caravel_fpga/vvd_caravel_fpga.gen/sources_1/bd/design_1/ipshared/17de/hdl/verilog/userdma_fifo_w40_d1024_A.v:9]
+INFO: [Synth 8-6155] done synthesizing module 'userdma_fifo_w40_d1024_A' (0#1) [/home/user/Documents/Code/ASoC/new_fsic/fsic_fpga/vivado/vvd_caravel_fpga/vvd_caravel_fpga.gen/sources_1/bd/design_1/ipshared/17de/hdl/verilog/userdma_fifo_w40_d1024_A.v:52]
+INFO: [Synth 8-6157] synthesizing module 'userdma_start_for_streamtoparallelwithburst_U0' [/home/user/Documents/Code/ASoC/new_fsic/fsic_fpga/vivado/vvd_caravel_fpga/vvd_caravel_fpga.gen/sources_1/bd/design_1/ipshared/17de/hdl/verilog/userdma_start_for_streamtoparallelwithburst_U0.v:43]
+INFO: [Synth 8-6157] synthesizing module 'userdma_start_for_streamtoparallelwithburst_U0_shiftReg' [/home/user/Documents/Code/ASoC/new_fsic/fsic_fpga/vivado/vvd_caravel_fpga/vvd_caravel_fpga.gen/sources_1/bd/design_1/ipshared/17de/hdl/verilog/userdma_start_for_streamtoparallelwithburst_U0.v:9]
+INFO: [Synth 8-6155] done synthesizing module 'userdma_start_for_streamtoparallelwithburst_U0_shiftReg' (0#1) [/home/user/Documents/Code/ASoC/new_fsic/fsic_fpga/vivado/vvd_caravel_fpga/vvd_caravel_fpga.gen/sources_1/bd/design_1/ipshared/17de/hdl/verilog/userdma_start_for_streamtoparallelwithburst_U0.v:9]
+INFO: [Synth 8-6155] done synthesizing module 'userdma_start_for_streamtoparallelwithburst_U0' (0#1) [/home/user/Documents/Code/ASoC/new_fsic/fsic_fpga/vivado/vvd_caravel_fpga/vvd_caravel_fpga.gen/sources_1/bd/design_1/ipshared/17de/hdl/verilog/userdma_start_for_streamtoparallelwithburst_U0.v:43]
+INFO: [Synth 8-6157] synthesizing module 'userdma_start_for_sendoutstream_U0' [/home/user/Documents/Code/ASoC/new_fsic/fsic_fpga/vivado/vvd_caravel_fpga/vvd_caravel_fpga.gen/sources_1/bd/design_1/ipshared/17de/hdl/verilog/userdma_start_for_sendoutstream_U0.v:43]
+INFO: [Synth 8-6157] synthesizing module 'userdma_start_for_sendoutstream_U0_shiftReg' [/home/user/Documents/Code/ASoC/new_fsic/fsic_fpga/vivado/vvd_caravel_fpga/vvd_caravel_fpga.gen/sources_1/bd/design_1/ipshared/17de/hdl/verilog/userdma_start_for_sendoutstream_U0.v:9]
+INFO: [Synth 8-6155] done synthesizing module 'userdma_start_for_sendoutstream_U0_shiftReg' (0#1) [/home/user/Documents/Code/ASoC/new_fsic/fsic_fpga/vivado/vvd_caravel_fpga/vvd_caravel_fpga.gen/sources_1/bd/design_1/ipshared/17de/hdl/verilog/userdma_start_for_sendoutstream_U0.v:9]
+INFO: [Synth 8-6155] done synthesizing module 'userdma_start_for_sendoutstream_U0' (0#1) [/home/user/Documents/Code/ASoC/new_fsic/fsic_fpga/vivado/vvd_caravel_fpga/vvd_caravel_fpga.gen/sources_1/bd/design_1/ipshared/17de/hdl/verilog/userdma_start_for_sendoutstream_U0.v:43]
+INFO: [Synth 8-6155] done synthesizing module 'userdma' (0#1) [/home/user/Documents/Code/ASoC/new_fsic/fsic_fpga/vivado/vvd_caravel_fpga/vvd_caravel_fpga.gen/sources_1/bd/design_1/ipshared/17de/hdl/verilog/userdma.v:10]
+INFO: [Synth 8-6155] done synthesizing module 'design_1_userdma_0_0' (0#1) [/home/user/Documents/Code/ASoC/new_fsic/fsic_fpga/vivado/vvd_caravel_fpga/vvd_caravel_fpga.gen/sources_1/bd/design_1/ip/design_1_userdma_0_0/synth/design_1_userdma_0_0.v:53]
+WARNING: [Synth 8-6014] Unused sequential element int_ap_done_reg was removed.  [/home/user/Documents/Code/ASoC/new_fsic/fsic_fpga/vivado/vvd_caravel_fpga/vvd_caravel_fpga.gen/sources_1/bd/design_1/ipshared/17de/hdl/verilog/userdma_control_s_axi.v:419]
+WARNING: [Synth 8-7129] Port outbuf_num_data_valid[10] in module userdma_sendoutstream_Pipeline_VITIS_LOOP_149_2 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port outbuf_num_data_valid[9] in module userdma_sendoutstream_Pipeline_VITIS_LOOP_149_2 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port outbuf_num_data_valid[8] in module userdma_sendoutstream_Pipeline_VITIS_LOOP_149_2 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port outbuf_num_data_valid[7] in module userdma_sendoutstream_Pipeline_VITIS_LOOP_149_2 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port outbuf_num_data_valid[6] in module userdma_sendoutstream_Pipeline_VITIS_LOOP_149_2 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port outbuf_num_data_valid[5] in module userdma_sendoutstream_Pipeline_VITIS_LOOP_149_2 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port outbuf_num_data_valid[4] in module userdma_sendoutstream_Pipeline_VITIS_LOOP_149_2 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port outbuf_num_data_valid[3] in module userdma_sendoutstream_Pipeline_VITIS_LOOP_149_2 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port outbuf_num_data_valid[2] in module userdma_sendoutstream_Pipeline_VITIS_LOOP_149_2 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port outbuf_num_data_valid[1] in module userdma_sendoutstream_Pipeline_VITIS_LOOP_149_2 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port outbuf_num_data_valid[0] in module userdma_sendoutstream_Pipeline_VITIS_LOOP_149_2 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port outbuf_fifo_cap[10] in module userdma_sendoutstream_Pipeline_VITIS_LOOP_149_2 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port outbuf_fifo_cap[9] in module userdma_sendoutstream_Pipeline_VITIS_LOOP_149_2 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port outbuf_fifo_cap[8] in module userdma_sendoutstream_Pipeline_VITIS_LOOP_149_2 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port outbuf_fifo_cap[7] in module userdma_sendoutstream_Pipeline_VITIS_LOOP_149_2 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port outbuf_fifo_cap[6] in module userdma_sendoutstream_Pipeline_VITIS_LOOP_149_2 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port outbuf_fifo_cap[5] in module userdma_sendoutstream_Pipeline_VITIS_LOOP_149_2 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port outbuf_fifo_cap[4] in module userdma_sendoutstream_Pipeline_VITIS_LOOP_149_2 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port outbuf_fifo_cap[3] in module userdma_sendoutstream_Pipeline_VITIS_LOOP_149_2 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port outbuf_fifo_cap[2] in module userdma_sendoutstream_Pipeline_VITIS_LOOP_149_2 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port outbuf_fifo_cap[1] in module userdma_sendoutstream_Pipeline_VITIS_LOOP_149_2 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port outbuf_fifo_cap[0] in module userdma_sendoutstream_Pipeline_VITIS_LOOP_149_2 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port outbuf_num_data_valid[10] in module userdma_sendoutstream is either unconnected or has no load
+WARNING: [Synth 8-7129] Port outbuf_num_data_valid[9] in module userdma_sendoutstream is either unconnected or has no load
+WARNING: [Synth 8-7129] Port outbuf_num_data_valid[8] in module userdma_sendoutstream is either unconnected or has no load
+WARNING: [Synth 8-7129] Port outbuf_num_data_valid[7] in module userdma_sendoutstream is either unconnected or has no load
+WARNING: [Synth 8-7129] Port outbuf_num_data_valid[6] in module userdma_sendoutstream is either unconnected or has no load
+WARNING: [Synth 8-7129] Port outbuf_num_data_valid[5] in module userdma_sendoutstream is either unconnected or has no load
+WARNING: [Synth 8-7129] Port outbuf_num_data_valid[4] in module userdma_sendoutstream is either unconnected or has no load
+WARNING: [Synth 8-7129] Port outbuf_num_data_valid[3] in module userdma_sendoutstream is either unconnected or has no load
+WARNING: [Synth 8-7129] Port outbuf_num_data_valid[2] in module userdma_sendoutstream is either unconnected or has no load
+WARNING: [Synth 8-7129] Port outbuf_num_data_valid[1] in module userdma_sendoutstream is either unconnected or has no load
+WARNING: [Synth 8-7129] Port outbuf_num_data_valid[0] in module userdma_sendoutstream is either unconnected or has no load
+WARNING: [Synth 8-7129] Port outbuf_fifo_cap[10] in module userdma_sendoutstream is either unconnected or has no load
+WARNING: [Synth 8-7129] Port outbuf_fifo_cap[9] in module userdma_sendoutstream is either unconnected or has no load
+WARNING: [Synth 8-7129] Port outbuf_fifo_cap[8] in module userdma_sendoutstream is either unconnected or has no load
+WARNING: [Synth 8-7129] Port outbuf_fifo_cap[7] in module userdma_sendoutstream is either unconnected or has no load
+WARNING: [Synth 8-7129] Port outbuf_fifo_cap[6] in module userdma_sendoutstream is either unconnected or has no load
+WARNING: [Synth 8-7129] Port outbuf_fifo_cap[5] in module userdma_sendoutstream is either unconnected or has no load
+WARNING: [Synth 8-7129] Port outbuf_fifo_cap[4] in module userdma_sendoutstream is either unconnected or has no load
+WARNING: [Synth 8-7129] Port outbuf_fifo_cap[3] in module userdma_sendoutstream is either unconnected or has no load
+WARNING: [Synth 8-7129] Port outbuf_fifo_cap[2] in module userdma_sendoutstream is either unconnected or has no load
+WARNING: [Synth 8-7129] Port outbuf_fifo_cap[1] in module userdma_sendoutstream is either unconnected or has no load
+WARNING: [Synth 8-7129] Port outbuf_fifo_cap[0] in module userdma_sendoutstream is either unconnected or has no load
+WARNING: [Synth 8-7129] Port outcount48_num_data_valid[6] in module userdma_sendoutstream is either unconnected or has no load
+WARNING: [Synth 8-7129] Port outcount48_num_data_valid[5] in module userdma_sendoutstream is either unconnected or has no load
+WARNING: [Synth 8-7129] Port outcount48_num_data_valid[4] in module userdma_sendoutstream is either unconnected or has no load
+WARNING: [Synth 8-7129] Port outcount48_num_data_valid[3] in module userdma_sendoutstream is either unconnected or has no load
+WARNING: [Synth 8-7129] Port outcount48_num_data_valid[2] in module userdma_sendoutstream is either unconnected or has no load
+WARNING: [Synth 8-7129] Port outcount48_num_data_valid[1] in module userdma_sendoutstream is either unconnected or has no load
+WARNING: [Synth 8-7129] Port outcount48_num_data_valid[0] in module userdma_sendoutstream is either unconnected or has no load
+WARNING: [Synth 8-7129] Port outcount48_fifo_cap[6] in module userdma_sendoutstream is either unconnected or has no load
+WARNING: [Synth 8-7129] Port outcount48_fifo_cap[5] in module userdma_sendoutstream is either unconnected or has no load
+WARNING: [Synth 8-7129] Port outcount48_fifo_cap[4] in module userdma_sendoutstream is either unconnected or has no load
+WARNING: [Synth 8-7129] Port outcount48_fifo_cap[3] in module userdma_sendoutstream is either unconnected or has no load
+WARNING: [Synth 8-7129] Port outcount48_fifo_cap[2] in module userdma_sendoutstream is either unconnected or has no load
+WARNING: [Synth 8-7129] Port outcount48_fifo_cap[1] in module userdma_sendoutstream is either unconnected or has no load
+WARNING: [Synth 8-7129] Port outcount48_fifo_cap[0] in module userdma_sendoutstream is either unconnected or has no load
+WARNING: [Synth 8-7129] Port in_en_clrsts_num_data_valid[1] in module userdma_sendoutstream is either unconnected or has no load
+WARNING: [Synth 8-7129] Port in_en_clrsts_num_data_valid[0] in module userdma_sendoutstream is either unconnected or has no load
+WARNING: [Synth 8-7129] Port in_en_clrsts_fifo_cap[1] in module userdma_sendoutstream is either unconnected or has no load
+WARNING: [Synth 8-7129] Port in_en_clrsts_fifo_cap[0] in module userdma_sendoutstream is either unconnected or has no load
+WARNING: [Synth 8-7129] Port sts_clear_num_data_valid[2] in module userdma_sendoutstream is either unconnected or has no load
+WARNING: [Synth 8-7129] Port sts_clear_num_data_valid[1] in module userdma_sendoutstream is either unconnected or has no load
+WARNING: [Synth 8-7129] Port sts_clear_num_data_valid[0] in module userdma_sendoutstream is either unconnected or has no load
+WARNING: [Synth 8-7129] Port sts_clear_fifo_cap[2] in module userdma_sendoutstream is either unconnected or has no load
+WARNING: [Synth 8-7129] Port sts_clear_fifo_cap[1] in module userdma_sendoutstream is either unconnected or has no load
+WARNING: [Synth 8-7129] Port sts_clear_fifo_cap[0] in module userdma_sendoutstream is either unconnected or has no load
+WARNING: [Synth 8-7129] Port m_axi_gmem1_AWREADY in module userdma_paralleltostreamwithburst_Pipeline_VITIS_LOOP_106_2 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port m_axi_gmem1_WREADY in module userdma_paralleltostreamwithburst_Pipeline_VITIS_LOOP_106_2 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port m_axi_gmem1_ARREADY in module userdma_paralleltostreamwithburst_Pipeline_VITIS_LOOP_106_2 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port m_axi_gmem1_RLAST in module userdma_paralleltostreamwithburst_Pipeline_VITIS_LOOP_106_2 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port m_axi_gmem1_RID[0] in module userdma_paralleltostreamwithburst_Pipeline_VITIS_LOOP_106_2 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port m_axi_gmem1_RFIFONUM[8] in module userdma_paralleltostreamwithburst_Pipeline_VITIS_LOOP_106_2 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port m_axi_gmem1_RFIFONUM[7] in module userdma_paralleltostreamwithburst_Pipeline_VITIS_LOOP_106_2 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port m_axi_gmem1_RFIFONUM[6] in module userdma_paralleltostreamwithburst_Pipeline_VITIS_LOOP_106_2 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port m_axi_gmem1_RFIFONUM[5] in module userdma_paralleltostreamwithburst_Pipeline_VITIS_LOOP_106_2 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port m_axi_gmem1_RFIFONUM[4] in module userdma_paralleltostreamwithburst_Pipeline_VITIS_LOOP_106_2 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port m_axi_gmem1_RFIFONUM[3] in module userdma_paralleltostreamwithburst_Pipeline_VITIS_LOOP_106_2 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port m_axi_gmem1_RFIFONUM[2] in module userdma_paralleltostreamwithburst_Pipeline_VITIS_LOOP_106_2 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port m_axi_gmem1_RFIFONUM[1] in module userdma_paralleltostreamwithburst_Pipeline_VITIS_LOOP_106_2 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port m_axi_gmem1_RFIFONUM[0] in module userdma_paralleltostreamwithburst_Pipeline_VITIS_LOOP_106_2 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port m_axi_gmem1_RUSER[0] in module userdma_paralleltostreamwithburst_Pipeline_VITIS_LOOP_106_2 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port m_axi_gmem1_RRESP[1] in module userdma_paralleltostreamwithburst_Pipeline_VITIS_LOOP_106_2 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port m_axi_gmem1_RRESP[0] in module userdma_paralleltostreamwithburst_Pipeline_VITIS_LOOP_106_2 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port m_axi_gmem1_BVALID in module userdma_paralleltostreamwithburst_Pipeline_VITIS_LOOP_106_2 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port m_axi_gmem1_BRESP[1] in module userdma_paralleltostreamwithburst_Pipeline_VITIS_LOOP_106_2 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port m_axi_gmem1_BRESP[0] in module userdma_paralleltostreamwithburst_Pipeline_VITIS_LOOP_106_2 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port m_axi_gmem1_BID[0] in module userdma_paralleltostreamwithburst_Pipeline_VITIS_LOOP_106_2 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port m_axi_gmem1_BUSER[0] in module userdma_paralleltostreamwithburst_Pipeline_VITIS_LOOP_106_2 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port outbuf_num_data_valid[10] in module userdma_paralleltostreamwithburst_Pipeline_VITIS_LOOP_106_2 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port outbuf_num_data_valid[9] in module userdma_paralleltostreamwithburst_Pipeline_VITIS_LOOP_106_2 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port outbuf_num_data_valid[8] in module userdma_paralleltostreamwithburst_Pipeline_VITIS_LOOP_106_2 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port outbuf_num_data_valid[7] in module userdma_paralleltostreamwithburst_Pipeline_VITIS_LOOP_106_2 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port outbuf_num_data_valid[6] in module userdma_paralleltostreamwithburst_Pipeline_VITIS_LOOP_106_2 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port outbuf_num_data_valid[5] in module userdma_paralleltostreamwithburst_Pipeline_VITIS_LOOP_106_2 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port outbuf_num_data_valid[4] in module userdma_paralleltostreamwithburst_Pipeline_VITIS_LOOP_106_2 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port outbuf_num_data_valid[3] in module userdma_paralleltostreamwithburst_Pipeline_VITIS_LOOP_106_2 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port outbuf_num_data_valid[2] in module userdma_paralleltostreamwithburst_Pipeline_VITIS_LOOP_106_2 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port outbuf_num_data_valid[1] in module userdma_paralleltostreamwithburst_Pipeline_VITIS_LOOP_106_2 is either unconnected or has no load
+INFO: [Common 17-14] Message 'Synth 8-7129' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:08 ; elapsed = 00:00:09 . Memory (MB): peak = 2276.191 ; gain = 550.684 ; free physical = 272 ; free virtual = 12636
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:08 ; elapsed = 00:00:09 . Memory (MB): peak = 2291.035 ; gain = 565.527 ; free physical = 325 ; free virtual = 12559
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:08 ; elapsed = 00:00:09 . Memory (MB): peak = 2291.035 ; gain = 565.527 ; free physical = 325 ; free virtual = 12559
+---------------------------------------------------------------------------------
+Netlist sorting complete. Time (s): cpu = 00:00:00.26 ; elapsed = 00:00:00.25 . Memory (MB): peak = 2291.035 ; gain = 0.000 ; free physical = 278 ; free virtual = 12248
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [/home/user/Documents/Code/ASoC/new_fsic/fsic_fpga/vivado/vvd_caravel_fpga/vvd_caravel_fpga.gen/sources_1/bd/design_1/ip/design_1_userdma_0_0/constraints/userdma_ooc.xdc] for cell 'inst'
+Finished Parsing XDC File [/home/user/Documents/Code/ASoC/new_fsic/fsic_fpga/vivado/vvd_caravel_fpga/vvd_caravel_fpga.gen/sources_1/bd/design_1/ip/design_1_userdma_0_0/constraints/userdma_ooc.xdc] for cell 'inst'
+Parsing XDC File [/home/user/Documents/Code/ASoC/new_fsic/fsic_fpga/vivado/vvd_caravel_fpga/vvd_caravel_fpga.runs/design_1_userdma_0_0_synth_1/dont_touch.xdc]
+Finished Parsing XDC File [/home/user/Documents/Code/ASoC/new_fsic/fsic_fpga/vivado/vvd_caravel_fpga/vvd_caravel_fpga.runs/design_1_userdma_0_0_synth_1/dont_touch.xdc]
+Completed Processing XDC Constraints
+
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2437.785 ; gain = 0.000 ; free physical = 243 ; free virtual = 12085
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Constraint Validation Runtime : Time (s): cpu = 00:00:00.66 ; elapsed = 00:00:00.29 . Memory (MB): peak = 2437.820 ; gain = 0.000 ; free physical = 335 ; free virtual = 12078
+INFO: [Designutils 20-5008] Incremental synthesis strategy off
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:19 ; elapsed = 00:00:19 . Memory (MB): peak = 2437.820 ; gain = 712.312 ; free physical = 260 ; free virtual = 12008
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7z020clg400-1
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:19 ; elapsed = 00:00:19 . Memory (MB): peak = 2437.820 ; gain = 712.312 ; free physical = 260 ; free virtual = 12008
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+Applied set_property KEEP_HIERARCHY = SOFT for inst. (constraint file  /home/user/Documents/Code/ASoC/new_fsic/fsic_fpga/vivado/vvd_caravel_fpga/vvd_caravel_fpga.runs/design_1_userdma_0_0_synth_1/dont_touch.xdc, line 9).
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:19 ; elapsed = 00:00:19 . Memory (MB): peak = 2437.820 ; gain = 712.312 ; free physical = 260 ; free virtual = 12008
+---------------------------------------------------------------------------------
+INFO: [Synth 8-802] inferred FSM for state register 'wstate_reg' in module 'userdma_control_s_axi'
+INFO: [Synth 8-802] inferred FSM for state register 'rstate_reg' in module 'userdma_control_s_axi'
+INFO: [Synth 8-802] inferred FSM for state register 'state_reg' in module 'userdma_gmem0_m_axi_reg_slice'
+INFO: [Synth 8-802] inferred FSM for state register 'state_reg' in module 'userdma_gmem0_m_axi_reg_slice__parameterized0'
+INFO: [Synth 8-802] inferred FSM for state register 'state_reg' in module 'userdma_gmem0_m_axi_reg_slice__parameterized1'
+INFO: [Synth 8-802] inferred FSM for state register 'state_reg' in module 'userdma_gmem0_m_axi_reg_slice__parameterized2'
+INFO: [Synth 8-802] inferred FSM for state register 'state_reg' in module 'userdma_gmem1_m_axi_reg_slice'
+INFO: [Synth 8-802] inferred FSM for state register 'state_reg' in module 'userdma_gmem1_m_axi_reg_slice__parameterized0'
+INFO: [Synth 8-802] inferred FSM for state register 'state_reg' in module 'userdma_gmem1_m_axi_reg_slice__parameterized1'
+INFO: [Synth 8-802] inferred FSM for state register 'state_reg' in module 'userdma_gmem1_m_axi_reg_slice__parameterized2'
+INFO: [Synth 8-4490] FSM extraction disabled for register 'ap_CS_fsm_reg' through user attribute
+INFO: [Synth 8-4490] FSM extraction disabled for register 'ap_CS_fsm_reg' through user attribute
+INFO: [Synth 8-4490] FSM extraction disabled for register 'ap_CS_fsm_reg' through user attribute
+INFO: [Synth 8-4490] FSM extraction disabled for register 'ap_CS_fsm_reg' through user attribute
+INFO: [Synth 8-4490] FSM extraction disabled for register 'ap_CS_fsm_reg' through user attribute
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                  iSTATE |                             0001 |                               11
+*
+                  WRIDLE |                             0010 |                               00
+                  WRDATA |                             0100 |                               01
+                  WRRESP |                             1000 |                               10
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'wstate_reg' using encoding 'one-hot' in module 'userdma_control_s_axi'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                  iSTATE |                              001 |                               10
+*
+                  RDIDLE |                              010 |                               00
+                  RDDATA |                              100 |                               01
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'rstate_reg' using encoding 'one-hot' in module 'userdma_control_s_axi'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                    ZERO |                               00 |                               10
+                     ONE |                               10 |                               11
+                     TWO |                               01 |                               01
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'state_reg' using encoding 'sequential' in module 'userdma_gmem0_m_axi_reg_slice'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                    ZERO |                               00 |                               10
+                     ONE |                               10 |                               11
+                     TWO |                               01 |                               01
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'state_reg' using encoding 'sequential' in module 'userdma_gmem0_m_axi_reg_slice__parameterized0'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                    ZERO |                               00 |                               10
+                     ONE |                               10 |                               11
+                     TWO |                               01 |                               01
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'state_reg' using encoding 'sequential' in module 'userdma_gmem0_m_axi_reg_slice__parameterized1'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                    ZERO |                               00 |                               10
+                     ONE |                               10 |                               11
+                     TWO |                               01 |                               01
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'state_reg' using encoding 'sequential' in module 'userdma_gmem0_m_axi_reg_slice__parameterized2'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                    ZERO |                               00 |                               10
+                     ONE |                               10 |                               11
+                     TWO |                               01 |                               01
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'state_reg' using encoding 'sequential' in module 'userdma_gmem1_m_axi_reg_slice'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                    ZERO |                               00 |                               10
+                     ONE |                               10 |                               11
+                     TWO |                               01 |                               01
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'state_reg' using encoding 'sequential' in module 'userdma_gmem1_m_axi_reg_slice__parameterized0'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                    ZERO |                               00 |                               10
+                     ONE |                               10 |                               11
+                     TWO |                               01 |                               01
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'state_reg' using encoding 'sequential' in module 'userdma_gmem1_m_axi_reg_slice__parameterized1'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                    ZERO |                               00 |                               10
+                     ONE |                               10 |                               11
+                     TWO |                               01 |                               01
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'state_reg' using encoding 'sequential' in module 'userdma_gmem1_m_axi_reg_slice__parameterized2'
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:21 ; elapsed = 00:00:21 . Memory (MB): peak = 2437.820 ; gain = 712.312 ; free physical = 236 ; free virtual = 11967
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input   64 Bit       Adders := 10    
+	   2 Input   52 Bit       Adders := 4     
+	   2 Input   33 Bit       Adders := 2     
+	   2 Input   32 Bit       Adders := 9     
+	   2 Input   31 Bit       Adders := 3     
+	   2 Input   12 Bit       Adders := 4     
+	   2 Input   11 Bit       Adders := 2     
+	   3 Input   11 Bit       Adders := 2     
+	   2 Input   10 Bit       Adders := 4     
+	   2 Input    9 Bit       Adders := 8     
+	   2 Input    8 Bit       Adders := 6     
+	   2 Input    7 Bit       Adders := 12    
+	   3 Input    7 Bit       Adders := 2     
+	   2 Input    6 Bit       Adders := 12    
+	   2 Input    5 Bit       Adders := 36    
+	   2 Input    4 Bit       Adders := 20    
+	   2 Input    3 Bit       Adders := 6     
+	   2 Input    2 Bit       Adders := 8     
++---XORs : 
+	   2 Input      1 Bit         XORs := 6     
++---Registers : 
+	               96 Bit    Registers := 12    
+	               72 Bit    Registers := 6     
+	               64 Bit    Registers := 21    
+	               62 Bit    Registers := 2     
+	               52 Bit    Registers := 4     
+	               40 Bit    Registers := 1     
+	               37 Bit    Registers := 2     
+	               36 Bit    Registers := 2     
+	               34 Bit    Registers := 2     
+	               33 Bit    Registers := 7     
+	               32 Bit    Registers := 34    
+	               31 Bit    Registers := 5     
+	               22 Bit    Registers := 1     
+	               20 Bit    Registers := 1     
+	               11 Bit    Registers := 4     
+	               10 Bit    Registers := 12    
+	                9 Bit    Registers := 2     
+	                8 Bit    Registers := 13    
+	                7 Bit    Registers := 14    
+	                6 Bit    Registers := 12    
+	                5 Bit    Registers := 19    
+	                4 Bit    Registers := 32    
+	                3 Bit    Registers := 4     
+	                2 Bit    Registers := 26    
+	                1 Bit    Registers := 267   
++---RAMs : 
+	              39K Bit	(1023 X 40 bit)          RAMs := 1     
+	              32K Bit	(1023 X 33 bit)          RAMs := 1     
+	               8K Bit	(255 X 34 bit)          RAMs := 2     
+	               2K Bit	(63 X 36 bit)          RAMs := 2     
+	               1K Bit	(63 X 32 bit)          RAMs := 2     
++---Muxes : 
+	   2 Input   96 Bit        Muxes := 4     
+	   2 Input   72 Bit        Muxes := 2     
+	   2 Input   64 Bit        Muxes := 18    
+	   2 Input   52 Bit        Muxes := 4     
+	   2 Input   33 Bit        Muxes := 2     
+	  22 Input   32 Bit        Muxes := 1     
+	   2 Input   32 Bit        Muxes := 18    
+	   3 Input   22 Bit        Muxes := 2     
+	   2 Input   22 Bit        Muxes := 1     
+	  23 Input   22 Bit        Muxes := 1     
+	   2 Input   20 Bit        Muxes := 1     
+	  21 Input   20 Bit        Muxes := 1     
+	   2 Input   19 Bit        Muxes := 1     
+	   3 Input   19 Bit        Muxes := 1     
+	   4 Input   12 Bit        Muxes := 4     
+	   2 Input   10 Bit        Muxes := 12    
+	   2 Input    9 Bit        Muxes := 4     
+	   2 Input    8 Bit        Muxes := 12    
+	   4 Input    8 Bit        Muxes := 4     
+	   2 Input    7 Bit        Muxes := 10    
+	   2 Input    6 Bit        Muxes := 19    
+	   2 Input    5 Bit        Muxes := 41    
+	   3 Input    5 Bit        Muxes := 1     
+	   4 Input    4 Bit        Muxes := 1     
+	   2 Input    4 Bit        Muxes := 20    
+	   5 Input    4 Bit        Muxes := 1     
+	   3 Input    3 Bit        Muxes := 1     
+	   2 Input    3 Bit        Muxes := 11    
+	   5 Input    3 Bit        Muxes := 1     
+	   2 Input    2 Bit        Muxes := 155   
+	   3 Input    2 Bit        Muxes := 30    
+	   4 Input    2 Bit        Muxes := 20    
+	   2 Input    1 Bit        Muxes := 290   
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 220 (col length:60)
+BRAMs: 280 (col length: RAMB18 60 RAMB36 30)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+WARNING: [Synth 8-7080] Parallel synthesis criteria is not met
+INFO: [Synth 8-5784] Optimized 36 bits of RAM "store_unit/buff_wdata/U_fifo_mem/mem_reg" due to constant propagation. Old ram width 36 bits, new ram width 0 bits.
+WARNING: [Synth 8-5785] Removed RAM "store_unit/buff_wdata/U_fifo_mem/mem_reg" due to constant propagation. Write data stuck at zero 
+INFO: [Synth 8-5784] Optimized 5 bits of RAM "U_userdma_fifo_w40_d1024_A_ram/mem_reg" due to constant propagation. Old ram width 40 bits, new ram width 35 bits.
+WARNING: [Synth 8-3332] Sequential element (FSM_onehot_wstate_reg[0]) is unused and will be removed from module userdma_control_s_axi.
+WARNING: [Synth 8-3332] Sequential element (FSM_onehot_rstate_reg[0]) is unused and will be removed from module userdma_control_s_axi.
+WARNING: [Synth 8-3332] Sequential element (bus_read/rs_rreq/FSM_sequential_state_reg[1]) is unused and will be removed from module userdma_gmem0_m_axi.
+WARNING: [Synth 8-3332] Sequential element (bus_read/rs_rreq/FSM_sequential_state_reg[0]) is unused and will be removed from module userdma_gmem0_m_axi.
+WARNING: [Synth 8-3332] Sequential element (bus_write/rs_wreq/FSM_sequential_state_reg[1]) is unused and will be removed from module userdma_gmem1_m_axi.
+WARNING: [Synth 8-3332] Sequential element (bus_write/rs_wreq/FSM_sequential_state_reg[0]) is unused and will be removed from module userdma_gmem1_m_axi.
+WARNING: [Synth 8-3332] Sequential element (bus_write/wreq_throttle/rs_req/FSM_sequential_state_reg[1]) is unused and will be removed from module userdma_gmem1_m_axi.
+WARNING: [Synth 8-3332] Sequential element (bus_write/wreq_throttle/rs_req/FSM_sequential_state_reg[0]) is unused and will be removed from module userdma_gmem1_m_axi.
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:34 ; elapsed = 00:00:35 . Memory (MB): peak = 2437.820 ; gain = 712.312 ; free physical = 1670 ; free virtual = 13371
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start ROM, RAM, DSP, Shift Register and Retiming Reporting
+---------------------------------------------------------------------------------
+
+Block RAM: Preliminary Mapping Report (see note below)
++------------------------+------------------------------------------+------------------------+---+---+------------------------+---+---+------------------+--------+--------+
+|Module Name             | RTL Object                               | PORT A (Depth x Width) | W | R | PORT B (Depth x Width) | W | R | Ports driving FF | RAMB18 | RAMB36 | 
++------------------------+------------------------------------------+------------------------+---+---+------------------------+---+---+------------------+--------+--------+
+|inst/gmem0_m_axi_U      | store_unit/buff_wdata/U_fifo_mem/mem_reg | 63 x 36(READ_FIRST)    | W |   | 63 x 36(WRITE_FIRST)   |   | R | Port A and B     | 1      | 0      | 
+|inst/gmem1_m_axi_U      | load_unit/buff_rdata/U_fifo_mem/mem_reg  | 255 x 34(READ_FIRST)   | W |   | 255 x 34(WRITE_FIRST)  |   | R | Port A and B     | 1      | 0      | 
+|inst/inbuf_U            | U_userdma_fifo_w33_d1024_A_ram/mem_reg   | 1023 x 33(READ_FIRST)  | W |   | 1023 x 33(WRITE_FIRST) |   | R | Port A and B     | 0      | 1      | 
+|userdma_fifo_w32_d64_A: | U_userdma_fifo_w32_d64_A_ram/mem_reg     | 63 x 32(READ_FIRST)    | W |   | 63 x 32(WRITE_FIRST)   |   | R | Port A and B     | 1      | 0      | 
+|inst/outbuf_U           | U_userdma_fifo_w40_d1024_A_ram/mem_reg   | 1023 x 40(READ_FIRST)  | W |   | 1023 x 40(WRITE_FIRST) |   | R | Port A and B     | 0      | 1      | 
+|userdma_fifo_w32_d64_A: | U_userdma_fifo_w32_d64_A_ram/mem_reg     | 63 x 32(READ_FIRST)    | W |   | 63 x 32(WRITE_FIRST)   |   | R | Port A and B     | 1      | 0      | 
++------------------------+------------------------------------------+------------------------+---+---+------------------------+---+---+------------------+--------+--------+
+
+Note: The table above is a preliminary report that shows the Block RAMs at the current stage of the synthesis flow. Some Block RAMs may be reimplemented as non Block RAM primitives later in the synthesis flow. Multiple instantiated Block RAMs are reported only once. 
+---------------------------------------------------------------------------------
+Finished ROM, RAM, DSP, Shift Register and Retiming Reporting
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:38 ; elapsed = 00:00:39 . Memory (MB): peak = 2437.820 ; gain = 712.312 ; free physical = 1655 ; free virtual = 13358
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:00:40 ; elapsed = 00:00:41 . Memory (MB): peak = 2437.820 ; gain = 712.312 ; free physical = 4659 ; free virtual = 16362
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start ROM, RAM, DSP, Shift Register and Retiming Reporting
+---------------------------------------------------------------------------------
+
+Block RAM: Final Mapping Report
++------------------------+------------------------------------------+------------------------+---+---+------------------------+---+---+------------------+--------+--------+
+|Module Name             | RTL Object                               | PORT A (Depth x Width) | W | R | PORT B (Depth x Width) | W | R | Ports driving FF | RAMB18 | RAMB36 | 
++------------------------+------------------------------------------+------------------------+---+---+------------------------+---+---+------------------+--------+--------+
+|inst/gmem0_m_axi_U      | store_unit/buff_wdata/U_fifo_mem/mem_reg | 63 x 36(READ_FIRST)    | W |   | 63 x 36(WRITE_FIRST)   |   | R | Port A and B     | 1      | 0      | 
+|inst/gmem1_m_axi_U      | load_unit/buff_rdata/U_fifo_mem/mem_reg  | 255 x 34(READ_FIRST)   | W |   | 255 x 34(WRITE_FIRST)  |   | R | Port A and B     | 1      | 0      | 
+|inst/inbuf_U            | U_userdma_fifo_w33_d1024_A_ram/mem_reg   | 1023 x 33(READ_FIRST)  | W |   | 1023 x 33(WRITE_FIRST) |   | R | Port A and B     | 0      | 1      | 
+|userdma_fifo_w32_d64_A: | U_userdma_fifo_w32_d64_A_ram/mem_reg     | 63 x 32(READ_FIRST)    | W |   | 63 x 32(WRITE_FIRST)   |   | R | Port A and B     | 1      | 0      | 
+|inst/outbuf_U           | U_userdma_fifo_w40_d1024_A_ram/mem_reg   | 1023 x 40(READ_FIRST)  | W |   | 1023 x 40(WRITE_FIRST) |   | R | Port A and B     | 0      | 1      | 
+|userdma_fifo_w32_d64_A: | U_userdma_fifo_w32_d64_A_ram/mem_reg     | 63 x 32(READ_FIRST)    | W |   | 63 x 32(WRITE_FIRST)   |   | R | Port A and B     | 1      | 0      | 
++------------------------+------------------------------------------+------------------------+---+---+------------------------+---+---+------------------+--------+--------+
+
+---------------------------------------------------------------------------------
+Finished ROM, RAM, DSP, Shift Register and Retiming Reporting
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+INFO: [Synth 8-7052] The timing for the instance inst/gmem1_m_axi_U/load_unit/buff_rdata/U_fifo_mem/mem_reg (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance inst/incount_U/U_userdma_fifo_w32_d64_A_ram/mem_reg (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance inst/outbuf_U/U_userdma_fifo_w40_d1024_A_ram/mem_reg (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:00:42 ; elapsed = 00:00:43 . Memory (MB): peak = 2437.820 ; gain = 712.312 ; free physical = 7187 ; free virtual = 18890
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:00:45 ; elapsed = 00:00:46 . Memory (MB): peak = 2437.820 ; gain = 712.312 ; free physical = 6879 ; free virtual = 18582
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:45 ; elapsed = 00:00:46 . Memory (MB): peak = 2437.820 ; gain = 712.312 ; free physical = 6879 ; free virtual = 18582
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:45 ; elapsed = 00:00:47 . Memory (MB): peak = 2437.820 ; gain = 712.312 ; free physical = 6879 ; free virtual = 18582
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:46 ; elapsed = 00:00:47 . Memory (MB): peak = 2437.820 ; gain = 712.312 ; free physical = 6879 ; free virtual = 18582
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:46 ; elapsed = 00:00:47 . Memory (MB): peak = 2437.820 ; gain = 712.312 ; free physical = 6854 ; free virtual = 18557
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:46 ; elapsed = 00:00:47 . Memory (MB): peak = 2437.820 ; gain = 712.312 ; free physical = 6850 ; free virtual = 18553
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start ROM, RAM, DSP, Shift Register and Retiming Reporting
+---------------------------------------------------------------------------------
+
+Dynamic Shift Register Report:
++------------+----------------+--------+------------+--------+---------+--------+--------+--------+
+|Module Name | RTL Name       | Length | Data Width | SRL16E | SRLC32E | Mux F7 | Mux F8 | Mux F9 | 
++------------+----------------+--------+------------+--------+---------+--------+--------+--------+
+|dsrl        | mem_reg[13]    | 96     | 96         | 96     | 0       | 0      | 0      | 0      | 
+|dsrl__1     | mem_reg[14]    | 1      | 1          | 1      | 0       | 0      | 0      | 0      | 
+|dsrl__2     | mem_reg[13]    | 1      | 1          | 1      | 0       | 0      | 0      | 0      | 
+|dsrl__3     | mem_reg[14]    | 8      | 8          | 8      | 0       | 0      | 0      | 0      | 
+|dsrl__4     | mem_reg[14]    | 72     | 72         | 72     | 0       | 0      | 0      | 0      | 
+|dsrl__5     | mem_reg[62]    | 37     | 37         | 0      | 74      | 37     | 0      | 0      | 
+|dsrl__6     | mem_reg[13]    | 96     | 96         | 96     | 0       | 0      | 0      | 0      | 
+|dsrl__7     | mem_reg[14]    | 1      | 1          | 1      | 0       | 0      | 0      | 0      | 
+|dsrl__8     | mem_reg[13]    | 1      | 1          | 1      | 0       | 0      | 0      | 0      | 
+|dsrl__9     | mem_reg[14]    | 8      | 8          | 8      | 0       | 0      | 0      | 0      | 
+|dsrl__10    | mem_reg[14]    | 72     | 72         | 72     | 0       | 0      | 0      | 0      | 
+|dsrl__11    | mem_reg[62]    | 37     | 37         | 0      | 74      | 37     | 0      | 0      | 
+|dsrl__12    | SRL_SIG_reg[2] | 1      | 1          | 1      | 0       | 0      | 0      | 0      | 
+|dsrl__13    | SRL_SIG_reg[2] | 64     | 64         | 64     | 0       | 0      | 0      | 0      | 
++------------+----------------+--------+------------+--------+---------+--------+--------+--------+
+
+---------------------------------------------------------------------------------
+Finished ROM, RAM, DSP, Shift Register and Retiming Reporting
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++-+--------------+----------+
+| |BlackBox name |Instances |
++-+--------------+----------+
++-+--------------+----------+
+
+Report Cell Usage: 
++------+---------+------+
+|      |Cell     |Count |
++------+---------+------+
+|1     |CARRY4   |   391|
+|2     |LUT1     |   199|
+|3     |LUT2     |   712|
+|4     |LUT3     |  1020|
+|5     |LUT4     |   641|
+|6     |LUT5     |   381|
+|7     |LUT6     |   687|
+|8     |MUXF7    |    37|
+|9     |RAMB18E1 |     4|
+|12    |RAMB36E1 |     2|
+|14    |SRL16E   |   330|
+|15    |SRLC32E  |    74|
+|16    |FDRE     |  3793|
+|17    |FDSE     |    30|
++------+---------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:46 ; elapsed = 00:00:47 . Memory (MB): peak = 2437.820 ; gain = 712.312 ; free physical = 6844 ; free virtual = 18547
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 286 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:40 ; elapsed = 00:00:42 . Memory (MB): peak = 2437.820 ; gain = 565.527 ; free physical = 6829 ; free virtual = 18532
+Synthesis Optimization Complete : Time (s): cpu = 00:00:46 ; elapsed = 00:00:47 . Memory (MB): peak = 2437.820 ; gain = 712.312 ; free physical = 6828 ; free virtual = 18532
+INFO: [Project 1-571] Translating synthesized netlist
+Netlist sorting complete. Time (s): cpu = 00:00:00.07 ; elapsed = 00:00:00.07 . Memory (MB): peak = 2437.820 ; gain = 0.000 ; free physical = 8683 ; free virtual = 20386
+INFO: [Netlist 29-17] Analyzing 434 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2437.820 ; gain = 0.000 ; free physical = 8671 ; free virtual = 20374
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Synth Design complete | Checksum: 3d997ab3
+INFO: [Common 17-83] Releasing license: Synthesis
+227 Infos, 117 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:53 ; elapsed = 00:00:51 . Memory (MB): peak = 2437.820 ; gain = 1063.812 ; free physical = 8671 ; free virtual = 20373
+INFO: [Common 17-2834] synth_design peak Physical Memory [PSS] (MB): overall = 1824.426; main = 1575.553; forked = 304.204
+INFO: [Common 17-2834] synth_design peak Virtual Memory [VSS] (MB): overall = 3378.344; main = 2437.789; forked = 972.570
+Write ShapeDB Complete: Time (s): cpu = 00:00:00.03 ; elapsed = 00:00:00.01 . Memory (MB): peak = 2461.797 ; gain = 0.000 ; free physical = 8668 ; free virtual = 20372
+INFO: [Common 17-1381] The checkpoint '/home/user/Documents/Code/ASoC/new_fsic/fsic_fpga/vivado/vvd_caravel_fpga/vvd_caravel_fpga.runs/design_1_userdma_0_0_synth_1/design_1_userdma_0_0.dcp' has been generated.
+INFO: [Coretcl 2-1648] Added synthesis output to IP cache for IP design_1_userdma_0_0, cache-ID = 113e6fbf24331e61
+INFO: [Coretcl 2-1174] Renamed 82 cell refs.
+Write ShapeDB Complete: Time (s): cpu = 00:00:00.03 ; elapsed = 00:00:00.01 . Memory (MB): peak = 2461.797 ; gain = 0.000 ; free physical = 8617 ; free virtual = 20328
+INFO: [Common 17-1381] The checkpoint '/home/user/Documents/Code/ASoC/new_fsic/fsic_fpga/vivado/vvd_caravel_fpga/vvd_caravel_fpga.runs/design_1_userdma_0_0_synth_1/design_1_userdma_0_0.dcp' has been generated.
+INFO: [runtcl-4] Executing : report_utilization -file design_1_userdma_0_0_utilization_synth.rpt -pb design_1_userdma_0_0_utilization_synth.pb
+INFO: [Common 17-206] Exiting Vivado at Thu May 16 19:32:24 2024...
