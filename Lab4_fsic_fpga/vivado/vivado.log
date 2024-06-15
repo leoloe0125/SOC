@@ -1,0 +1,210 @@
+#-----------------------------------------------------------
+# Vivado v2022.1 (64-bit)
+# SW Build 3526262 on Mon Apr 18 15:47:01 MDT 2022
+# IP Build 3524634 on Mon Apr 18 20:55:01 MDT 2022
+# Start of session at: Mon Jun 10 15:53:08 2024
+# Process ID: 39741
+# Current directory: /home/ubuntu/Desktop/Leo/SOC/fsic_fpga/vivado
+# Command line: vivado -source vvd_caravel_fpga_fsic.tcl -mode tcl
+# Log file: /home/ubuntu/Desktop/Leo/SOC/fsic_fpga/vivado/vivado.log
+# Journal file: /home/ubuntu/Desktop/Leo/SOC/fsic_fpga/vivado/vivado.jou
+# Running On: ubuntu2004, OS: Linux, CPU Frequency: 2111.996 MHz, CPU Physical cores: 2, Host memory: 10425 MB
+#-----------------------------------------------------------
+source vvd_caravel_fpga_fsic.tcl
+# proc checkRequiredFiles { origin_dir} {
+#   set status true
+#   set files [list \
+#  "[file normalize "$origin_dir/vvd_srcs/caravel_soc/rtl/user/logic_analyzer/rtl/LogicAnalyzer.v"]"\
+#  "[file normalize "$origin_dir/vvd_srcs/caravel_soc/vip/RAM128.v"]"\
+#  "[file normalize "$origin_dir/vvd_srcs/caravel_soc/vip/RAM256.v"]"\
+#  "[file normalize "$origin_dir/vvd_srcs/caravel_soc/rtl/user/logic_analyzer/rtl/Sram.v"]"\
+#  "[file normalize "$origin_dir/vvd_srcs/caravel_soc/rtl/soc/VexRiscv_MinDebugCache.v"]"\
+#  "[file normalize "$origin_dir/vvd_srcs/caravel_soc/rtl/user/user_subsys/axil_slav/rtl/axil_slav.v"]"\
+#  "[file normalize "$origin_dir/vvd_srcs/caravel_soc/rtl/user/user_subsys/axis_mstr/rtl/axis_mstr.v"]"\
+#  "[file normalize "$origin_dir/vvd_srcs/caravel_soc/rtl/user/user_subsys/axis_slav/rtl/axis_slav.v"]"\
+#  "[file normalize "$origin_dir/vvd_srcs/caravel_soc/rtl/soc/chip_io.v"]"\
+#  "[file normalize "$origin_dir/vvd_srcs/caravel_soc/rtl/user/user_subsys/user_prj/user_prj0/rtl/concat_EdgeDetect_Top_fsic.v"]"\
+#  "[file normalize "$origin_dir/vvd_srcs/caravel_soc/rtl/user/config_ctrl/rtl/config_ctrl.v"]"\
+#  "[file normalize "$origin_dir/vvd_srcs/caravel_soc/rtl/user/rtl/fsic.v"]"\
+#  "[file normalize "$origin_dir/vvd_srcs/caravel_soc/rtl/user/fsic_clkrst/rtl/fsic_clkrst.v"]"\
+#  "[file normalize "$origin_dir/vvd_srcs/caravel_soc/rtl/user/io_serdes/rtl/fsic_coreclk_phase_cnt.v"]"\
+#  "[file normalize "$origin_dir/vvd_srcs/caravel_soc/rtl/user/io_serdes/rtl/fsic_io_serdes_rx.v"]"\
+#  "[file normalize "$origin_dir/vvd_srcs/caravel_soc/rtl/user/mprj_io/rtl/fsic_mprj_io.v"]"\
+#  "[file normalize "$origin_dir/vvd_srcs/caravel_soc/rtl/soc/gpio_control_block.v"]"\
+#  "[file normalize "$origin_dir/vvd_srcs/caravel_soc/rtl/soc/gpio_defaults_block.v"]"\
+#  "[file normalize "$origin_dir/vvd_srcs/caravel_soc/rtl/soc/housekeeping.v"]"\
+#  "[file normalize "$origin_dir/vvd_srcs/caravel_soc/rtl/soc/housekeeping_spi.v"]"\
+#  "[file normalize "$origin_dir/vvd_srcs/caravel_soc/rtl/user/io_serdes/rtl/io_serdes.v"]"\
+#  "[file normalize "$origin_dir/vvd_srcs/caravel_soc/rtl/user/user_subsys/irq_mux/rtl/irq_mux.v"]"\
+#  "[file normalize "$origin_dir/vvd_srcs/caravel_soc/rtl/user/user_subsys/la_mux/rtl/la_mux.v"]"\
+#  "[file normalize "$origin_dir/vvd_srcs/caravel_soc/rtl/soc/mgmt_core.v"]"\
+#  "[file normalize "$origin_dir/vvd_srcs/caravel_soc/rtl/soc/mgmt_core_wrapper.v"]"\
+#  "[file normalize "$origin_dir/vvd_srcs/caravel_soc/rtl/soc/mprj_io.v"]"\
+#  "[file normalize "$origin_dir/vvd_srcs/caravel_soc/rtl/user/user_subsys/user_prj/user_prj0/rtl/spram.v"]"\
+#  "[file normalize "$origin_dir/vvd_srcs/caravel_soc/rtl/user/axis_switch/rtl/sw_caravel.v"]"\
+#  "[file normalize "$origin_dir/vvd_srcs/caravel_soc/rtl/user/user_subsys/user_prj/user_prj0/rtl/user_prj0.v"]"\
+#  "[file normalize "$origin_dir/vvd_srcs/caravel_soc/rtl/user/user_subsys/user_prj/user_prj1/rtl/user_prj1.v"]"\
+#  "[file normalize "$origin_dir/vvd_srcs/caravel_soc/rtl/user/user_subsys/user_prj/user_prj2/rtl/user_prj2.v"]"\
+#  "[file normalize "$origin_dir/vvd_srcs/caravel_soc/rtl/user/user_subsys/user_prj/user_prj3/rtl/user_prj3.v"]"\
+#  "[file normalize "$origin_dir/vvd_srcs/caravel_soc/rtl/user/rtl/user_project_wrapper.v"]"\
+#  "[file normalize "$origin_dir/vvd_srcs/caravel_soc/rtl/user/user_subsys/rtl/user_subsys.v"]"\
+#  "[file normalize "$origin_dir/vvd_srcs/caravel_soc/rtl/user/axilite_axis/rtl/axi_ctrl_logic.sv"]"\
+#  "[file normalize "$origin_dir/vvd_srcs/caravel_soc/rtl/user/axilite_axis/rtl/axil_axis.sv"]"\
+#  "[file normalize "$origin_dir/vvd_srcs/caravel_soc/rtl/user/axilite_axis/rtl/axilite_master.sv"]"\
+#  "[file normalize "$origin_dir/vvd_srcs/caravel_soc/rtl/user/axilite_axis/rtl/axilite_slave.sv"]"\
+#  "[file normalize "$origin_dir/vvd_srcs/caravel_soc/rtl/user/axilite_axis/rtl/axis_master.sv"]"\
+#  "[file normalize "$origin_dir/vvd_srcs/caravel_soc/rtl/user/axilite_axis/rtl/axis_slave.sv"]"\
+#  "[file normalize "$origin_dir/vvd_srcs/caravel_soc/rtl/soc/caravel.v"]"\
+#  "[file normalize "$origin_dir/vvd_srcs/fpga/rtl/PL/LA_DMA/ladmatr.v"]"\
+#  "[file normalize "$origin_dir/vvd_srcs/fpga/rtl/PL/LA_DMA/ladmatr_control_s_axi.v"]"\
+#  "[file normalize "$origin_dir/vvd_srcs/fpga/rtl/PL/LA_DMA/ladmatr_entry_proc.v"]"\
+#  "[file normalize "$origin_dir/vvd_srcs/fpga/rtl/PL/LA_DMA/ladmatr_fifo_w1_d2_S.v"]"\
+#  "[file normalize "$origin_dir/vvd_srcs/fpga/rtl/PL/LA_DMA/ladmatr_fifo_w32_d2_S.v"]"\
+#  "[file normalize "$origin_dir/vvd_srcs/fpga/rtl/PL/LA_DMA/ladmatr_fifo_w32_d8_S.v"]"\
+#  "[file normalize "$origin_dir/vvd_srcs/fpga/rtl/PL/LA_DMA/ladmatr_fifo_w33_d128_A.v"]"\
+#  "[file normalize "$origin_dir/vvd_srcs/fpga/rtl/PL/LA_DMA/ladmatr_fifo_w64_d3_S.v"]"\
+#  "[file normalize "$origin_dir/vvd_srcs/fpga/rtl/PL/LA_DMA/ladmatr_flow_control_loop_pipe_sequential_init.v"]"\
+#  "[file normalize "$origin_dir/vvd_srcs/fpga/rtl/PL/LA_DMA/ladmatr_getinstream.v"]"\
+#  "[file normalize "$origin_dir/vvd_srcs/fpga/rtl/PL/LA_DMA/ladmatr_getinstream_Pipeline_VITIS_LOOP_44_1.v"]"\
+#  "[file normalize "$origin_dir/vvd_srcs/fpga/rtl/PL/LA_DMA/ladmatr_gmem0_m_axi.v"]"\
+#  "[file normalize "$origin_dir/vvd_srcs/fpga/rtl/PL/LA_DMA/ladmatr_regslice_both.v"]"\
+#  "[file normalize "$origin_dir/vvd_srcs/fpga/rtl/PL/LA_DMA/ladmatr_start_for_streamtoparallelwithburst_U0.v"]"\
+#  "[file normalize "$origin_dir/vvd_srcs/fpga/rtl/PL/LA_DMA/ladmatr_streamtoparallelwithburst.v"]"\
+#  "[file normalize "$origin_dir/vvd_srcs/fpga/rtl/PL/LA_DMA/ladmatr_streamtoparallelwithburst_Pipeline_VITIS_LOOP_15_2.v"]"\
+#  "[file normalize "$origin_dir/vvd_srcs/fpga/rtl/PL/sw_fpga.v"]"\
+#  "[file normalize "$origin_dir/vvd_srcs/fpga/rtl/PL/ps_axil.v"]"\
+#  "[file normalize "$origin_dir/vitis_prj/verilog_spiflash/spiflash.v"]"\
+#  "[file normalize "$origin_dir/vvd_srcs/caravel_soc/rtl/header/user_defines.v"]"\
+#  "[file normalize "$origin_dir/vvd_srcs/caravel_soc/rtl/header/defines.v"]"\
+#  "[file normalize "$origin_dir/fsic_defines.v"]"\
+#   ]
+#   foreach ifile $files {
+#     if { ![file isfile $ifile] } {
+#       puts " Could not find remote file $ifile "
+#       set status false
+#     }
+#   }
+# 
+#   set paths [list \
+#  "[file normalize "$origin_dir/[file normalize "$origin_dir/vitis_prj/hls_caravel_ps"]"]"\
+#  "[file normalize "$origin_dir/[file normalize "$origin_dir/vitis_prj/hls_output_pin"]"]"\
+#   ]
+#   foreach ipath $paths {
+#     if { ![file isdirectory $ipath] } {
+#       puts " Could not access $ipath "
+#       set status false
+#     }
+#   }
+# 
+#   return $status
+# }
+# set origin_dir "."
+# if { [info exists ::origin_dir_loc] } {
+#   set origin_dir $::origin_dir_loc
+# }
+# set _xil_proj_name_ "vvd_caravel_fpga"
+# if { [info exists ::user_project_name] } {
+#   set _xil_proj_name_ $::user_project_name
+# }
+# variable script_file
+# set script_file "vvd_caravel_fpga_fsic.tcl"
+# proc print_help {} {
+#   variable script_file
+#   puts "\nDescription:"
+#   puts "Recreate a Vivado project from this script. The created project will be"
+#   puts "functionally equivalent to the original project for which this script was"
+#   puts "generated. The script contains commands for creating a project, filesets,"
+#   puts "runs, adding/importing sources and setting properties on various objects.\n"
+#   puts "Syntax:"
+#   puts "$script_file"
+#   puts "$script_file -tclargs \[--origin_dir <path>\]"
+#   puts "$script_file -tclargs \[--project_name <name>\]"
+#   puts "$script_file -tclargs \[--help\]\n"
+#   puts "Usage:"
+#   puts "Name                   Description"
+#   puts "-------------------------------------------------------------------------"
+#   puts "\[--origin_dir <path>\]  Determine source file paths wrt this path. Default"
+#   puts "                       origin_dir path value is \".\", otherwise, the value"
+#   puts "                       that was set with the \"-paths_relative_to\" switch"
+#   puts "                       when this script was generated.\n"
+#   puts "\[--project_name <name>\] Create project with the specified name. Default"
+#   puts "                       name is the name of the project from where this"
+#   puts "                       script was generated.\n"
+#   puts "\[--help\]               Print help information for this script"
+#   puts "-------------------------------------------------------------------------\n"
+#   exit 0
+# }
+# if { $::argc > 0 } {
+#   for {set i 0} {$i < $::argc} {incr i} {
+#     set option [string trim [lindex $::argv $i]]
+#     switch -regexp -- $option {
+#       "--origin_dir"   { incr i; set origin_dir [lindex $::argv $i] }
+#       "--project_name" { incr i; set _xil_proj_name_ [lindex $::argv $i] }
+#       "--help"         { print_help }
+#       default {
+#         if { [regexp {^-} $option] } {
+#           puts "ERROR: Unknown option '$option' specified, please type '$script_file -tclargs --help' for usage info.\n"
+#           return 1
+#         }
+#       }
+#     }
+#   }
+# }
+# set orig_proj_dir "[file normalize "$origin_dir/vvd_caravel_fpga"]"
+# set validate_required 0
+# if { $validate_required } {
+#   if { [checkRequiredFiles $origin_dir] } {
+#     puts "Tcl file $script_file is valid. All files required for project creation is accesable. "
+#   } else {
+#     puts "Tcl file $script_file is not valid. Not all files required for project creation is accesable. "
+#     return
+#   }
+# }
+# create_project ${_xil_proj_name_} ./${_xil_proj_name_} -part xc7z020clg400-1
+# set proj_dir [get_property directory [current_project]]
+# set obj [current_project]
+# set_property -name "board_part" -value "tul.com.tw:pynq-z2:part0:1.0" -objects $obj
+# set_property -name "default_lib" -value "xil_defaultlib" -objects $obj
+# set_property -name "enable_resource_estimation" -value "0" -objects $obj
+# set_property -name "enable_vhdl_2008" -value "1" -objects $obj
+# set_property -name "ip_cache_permissions" -value "read write" -objects $obj
+# set_property -name "ip_output_repo" -value "$proj_dir/${_xil_proj_name_}.cache/ip" -objects $obj
+# set_property -name "mem.enable_memory_map_generation" -value "1" -objects $obj
+# set_property -name "platform.board_id" -value "pynq-z2" -objects $obj
+# set_property -name "revised_directory_structure" -value "1" -objects $obj
+# set_property -name "sim.central_dir" -value "$proj_dir/${_xil_proj_name_}.ip_user_files" -objects $obj
+# set_property -name "sim.ip.auto_export_scripts" -value "1" -objects $obj
+# set_property -name "simulator_language" -value "Mixed" -objects $obj
+# set_property -name "webtalk.activehdl_export_sim" -value "10" -objects $obj
+# set_property -name "webtalk.ies_export_sim" -value "10" -objects $obj
+# set_property -name "webtalk.modelsim_export_sim" -value "10" -objects $obj
+# set_property -name "webtalk.questa_export_sim" -value "10" -objects $obj
+# set_property -name "webtalk.riviera_export_sim" -value "10" -objects $obj
+# set_property -name "webtalk.vcs_export_sim" -value "10" -objects $obj
+# set_property -name "webtalk.xsim_export_sim" -value "10" -objects $obj
+# set_property -name "webtalk.xsim_launch_sim" -value "25" -objects $obj
+# set_property -name "xpm_libraries" -value "XPM_CDC XPM_FIFO XPM_MEMORY" -objects $obj
+# if {[string equal [get_filesets -quiet sources_1] ""]} {
+#   create_fileset -srcset sources_1
+# }
+# set obj [get_filesets sources_1]
+# if { $obj != {} } {
+#    set_property "ip_repo_paths" "[file normalize "$origin_dir/vitis_prj/hls_caravel_ps"] [file normalize "$origin_dir/vitis_prj/hls_output_pin"]" $obj
+# 
+#    # Rebuild user ip_repo's index before adding any source files
+#    update_ip_catalog -rebuild
+# }
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1700] Loaded user IP repository '/home/ubuntu/Desktop/Leo/SOC/fsic_fpga/vivado/vitis_prj/hls_caravel_ps'.
+INFO: [IP_Flow 19-1700] Loaded user IP repository '/home/ubuntu/Desktop/Leo/SOC/fsic_fpga/vivado/vitis_prj/hls_output_pin'.
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository '/tools/Xilinx/Vivado/2022.1/data/ip'.
+# set obj [get_filesets sources_1]
+invalid command name "/home/ubuntu/Desktop/Leo/SOC/fsic_fpga/vivado/vvd_srcs/caravel_soc/rtl/user/user_subsys/user_prj/user_prj2/rtl/user_prj2.v"
+    while executing
+"[file normalize "${origin_dir}/vvd_srcs/caravel_soc/rtl/user/user_subsys/user_prj/user_prj2/rtl/user_prj2.v"] \
+ [file normalize "${origin_dir}/vvd_sr..."
+    invoked from within
+"set files [list \
+ [file normalize "${origin_dir}/vvd_srcs/caravel_soc/rtl/user/logic_analyzer/rtl/LogicAnalyzer.v"] \
+ [file normalize "${origin_dir}..."
+    (file "vvd_caravel_fpga_fsic.tcl" line 231)

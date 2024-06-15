@@ -1,0 +1,30 @@
+#-----------------------------------------------------------
+# xsim v2022.1 (64-bit)
+# SW Build 3526262 on Mon Apr 18 15:47:01 MDT 2022
+# IP Build 3524634 on Mon Apr 18 20:55:01 MDT 2022
+# Start of session at: Mon Jun 10 15:38:12 2024
+# Process ID: 33596
+# Current directory: /home/ubuntu/Desktop/Leo/SOC/fsic_fpga/vivado/vitis_prj/hls_userdma/final_dma/solution1/sim/verilog
+# Command line: xsim -mode tcl -source {xsim.dir/userdma/xsim_script.tcl}
+# Log file: /home/ubuntu/Desktop/Leo/SOC/fsic_fpga/vivado/vitis_prj/hls_userdma/final_dma/solution1/sim/verilog/xsim.log
+# Journal file: /home/ubuntu/Desktop/Leo/SOC/fsic_fpga/vivado/vitis_prj/hls_userdma/final_dma/solution1/sim/verilog/xsim.jou
+# Running On: ubuntu2004, OS: Linux, CPU Frequency: 2111.996 MHz, CPU Physical cores: 2, Host memory: 10425 MB
+#-----------------------------------------------------------
+source xsim.dir/userdma/xsim_script.tcl
+# xsim {userdma} -autoloadwcfg -tclbatch {userdma.tcl}
+Time resolution is 1 ps
+source userdma.tcl
+## run all
+////////////////////////////////////////////////////////////////////////////////////
+// Inter-Transaction Progress: Completed Transaction / Total Transaction
+// Intra-Transaction Progress: Measured Latency / Latency Estimation * 100%
+//
+// RTL Simulation : "Inter-Transaction Progress" ["Intra-Transaction Progress"] @ "Simulation Time"
+////////////////////////////////////////////////////////////////////////////////////
+// RTL Simulation : 0 / 2 [n/a] @ "125000"
+// RTL Simulation : 1 / 2 [n/a] @ "4045000"
+// RTL Simulation : 2 / 2 [n/a] @ "5155000"
+////////////////////////////////////////////////////////////////////////////////////
+$finish called at time : 5215 ns : File "/home/ubuntu/Desktop/Leo/SOC/fsic_fpga/vivado/vitis_prj/hls_userdma/final_dma/solution1/sim/verilog/userdma.autotb.v" Line 779
+## quit
+INFO: [Common 17-206] Exiting xsim at Mon Jun 10 15:38:27 2024...
